@@ -1,0 +1,101 @@
+/*- Тёмная тема -*/
+.main-element {
+    --primary-color: #302ae6;
+    --secondary-color: #536390;
+    --font-color: #000000;
+    --bg-color: #fff;
+    --heading-color: #292922;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: "Oswald", sans-serif;
+  }
+  
+  [data-theme="dark"] {
+    --primary-color: #9a97f3;
+    --secondary-color: #818cab;
+    --font-color: #ffffff;
+    --bg-color: rgb(34, 34, 38);
+    --heading-color: #818cab;
+  }
+  
+  .post__title {
+    color: var(--heading-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .post__text {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+  
+  section {
+    max-width: 68%;
+    margin: 0 auto;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+  }
+  
+  /* СТИЛИ ДЛЯ ТУМБЛЕРА */
+  
+  .theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+  }
+  
+  .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .theme-switch input {
+    display: none;
+  }
+  
+  .slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 26px;
+  }
+  
+  input:checked + .slider {
+    background-color: #66bb6a;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

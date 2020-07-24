@@ -1,0 +1,34 @@
+﻿.block { /* Обычные блоки */
+  padding: 20px;
+  background: #f3f3f3;
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.adblock { /* Для рекламного блока */
+  padding: 20px;
+  background: #f3f3f3;
+  width: 300px;
+  padding: 15px;
+  border-radius: 100px;
+}
+
+/* Чтобы блоки были в ряд */
+.left_otstup {
+  float: left; /* Обтекание справа */ 
+  margin-left: 5%;
+  margin-right: 5%;
+ }
+
+.right_otstup {
+  float: right; /* Обтекание справа */ 
+  margin-left: 5%;
+  margin-right: 5%;
+ }
+
+.top_otstup {
+  float: top; /* Обтекание справа */ 
+  margin-left: 5%;
+  margin-right: 5%;
+ }

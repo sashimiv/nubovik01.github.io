@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<!-- Сайт создан Нубовиком • 2020-2020 год -->
+<html>
+
+<head>
+  <link rel="shortcut icon" href="favicon.png" type="image/png"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Сайт Нубовика</title>
+  <meta name="description" content="Сайт Нубовuка">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./scripts/style.css">
+  <link rel="stylesheet" href="./scripts/buttons.css">
+  <link rel="stylesheet" href="./scripts/block.css">
+  <link rel="stylesheet" href="./scripts/alerts.css">
+  <link rel="stylesheet" href="./scripts/darkteme.css">
+  <noscript><meta http-equiv="refresh" content="0; URL=badbrowser.html"></noscript>
+
+  <script data-ad-client="ca-pub-9527754465191175" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  // Отправка некоторых данных в консолъ.
+  console.log(`Файлы Cookie: \n${document.cookie}`);
+  console.log(`Браузер: \n${navigator.userAgent}`)
+
+  // Определяем, с телефона человек или с компьютера.
+  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    console.log(`Пользователь с телефона`)
+
+  } else {
+    console.log(`Пользователь с компьютера`)
+  }
+
+  // AAB - Функция AntiAdBlock
+  window.onload = function () {
+  var aab = document.getElementsByClassName( 'adsbygoogle' ); // Если реклама вырезана, то:
+ 
+  if ( aab[0] && aab[0].clientHeight == 0 ) { 
+    console.log(`Пользователь использует AdBlock`)
+    document.getElementById('offab').innerHTML = `
+    <div class="alertred">
+    <center>Наш сайт работает <b>только</b> за счёт рекламы! Пожалуйста <b>выключите</b> свой <b>AdBlock</b></center>
+    </div>
+    `
+
+    document.getElementsByClassName( "header" )[0].remove();
+    console.log(`Удалено: \nМеню`)
+    }
+  }
+
+  // Badbrowser
+  var ver = navigator.appVersion;
+  if (ver.indexOf("MSIE") != -1) {
+    console.log("Пользователь зашёл с IE");
+    window.location.href = "badbrowser.html";
+  }
+  else
+    console.log("Пользователь зашёл с другого браузера.");
+
+
+  //Дата
+  function getDate() {
+    var date = new Date();
+    var month = date.getMonth()
+    var day = date.getDate();
+    var year = date.getFullYear();
+
+    document.getElementById('dateDisplay').innerHTML = day + '.' + month + '.' + year;
+  }
+  setInterval(getDate, 1000);
+</script>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+    ym(65547946, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+      trackHash: true
+    });
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/65547946" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <!-- VK Widget -->
+  <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+  <script type="text/javascript">
+  VK.Widgets.CommunityMessages("vk_community_messages", 191048799, {expandTimeout: "10000",tooltipButtonText: "Вы нашли ошибку или у вас есть вопрос?"});
+  </script>
+  <div id="vk_community_messages"></div>
+  <!-- /VK Widget -->
+</head>
+
+<!--  Alerts  -->
+<big id="offab"></big>
+
+<div class="alertblue">
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span> 
+  <img src="./images/cookie.gif" width="16" height="16"></img> На сайте используются файлы Cookies, это позволяет нам делать его лучше. Продолжая пользоваться сайтом, вы соглашаетесь с использованием файлов cookie.
+</div>
+<!-- /Alerts -->
+
+<main class="main-element">
+
+<body>
+<center><br>
+<h2><img src="favicon.png" width="27" height="29"> Cайт Нубовика</h2>
+  <!-- Рекламный блок №1 -->
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-9527754465191175"
+      data-ad-slot="1193693488"
+      data-ad-format="auto"
+      data-full-width-responsive="true">
+      </ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  <!-- /Рекламный блок №1 -->
+  <!-- Рекламный блок №2 -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+      style="display:block"
+      data-ad-client="ca-pub-9527754465191175"
+      data-ad-slot="5384946281"
+      data-ad-format="auto"
+      data-full-width-responsive="true">
+    </ins>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+  <!-- /Рекламный блок №2 -->
+
+<!-- Блоки -->
+<div class="left_otstup">
+  <div class="block">
+    <b>Дискорд-сервер</b>
+      <iframe src="https://discord.com/widget?id=457858774099689479&theme=dark" width="300" height="430" allowtransparency="true" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div class="right_otstup">
+  <div class="block">
+    <b>Музыка</b>
+      <audio controls>
+        <source src="http://eptop128server.streamr.ru:8033/eptop128" type="audio/ogg; codecs=vorbis">
+        <source src="http://eptop128server.streamr.ru:8033/eptop128" type="audio/mpeg">
+      </audio>
+      <img src="https://metrika-informer.com/informer/65547946/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="65547946" data-lang="ru"/>
+    </div><br>
+
+    <div class="block">
+      <b>Настройки</b>
+      <nav>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox"/>
+            <div class="slider round"></div>
+          </label>
+        </div>
+      </nav>
+    
+    <script>
+      const toggleSwitch = document.querySelector(
+      '.theme-switch input[type="checkbox"]'
+    );
+    const currentTheme = localStorage.getItem("theme");
+    const mainElement = document.querySelector(".main-element");
+    
+    if (currentTheme) {
+      mainElement.setAttribute("data-theme", currentTheme);
+    
+      if (currentTheme === "dark") {
+        toggleSwitch.checked = true;
+      }
+    }
+    
+    function switchTheme(e) {
+      if (e.target.checked) {
+        mainElement.setAttribute("data-theme", "dark");
+        localStorage.setItem("theme", "dark");
+      } else {
+        mainElement.setAttribute("data-theme", "light");
+        localStorage.setItem("theme", "light");
+      }
+    }
+    
+    toggleSwitch.addEventListener("change", switchTheme, false);
+    </script>
+    </div><br>
+
+    <div class="block">
+    <b>Комментарии</b>
+      <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+      <script type="text/javascript">VK.init({apiId: 7543607, onlyWidgets: true});</script>
+        <div id="vk_comments"></div>
+          <script type="text/javascript">VK.Widgets.Comments("vk_comments", {limit: 1, width: "50", attach: "*"});</script>
+        </div>
+    </div>
+</div>
+
+<div class="top_otstup">
+  <div class="adblock">
+    <b>Реклама</b>
+    <img src="./images/forAD.png">
+    </div>
+</div>
+<!-- /Блоки -->
+</center>
+</body>
+
+  <header class="header">
+    <div class="hamburger">
+      <button class="button hamburger__button js-menu__toggle">
+        <span class="hamburger__label">Открыть меню</span>
+      </button>
+    </div>
+    <nav class="menu">
+      <ul class="list menu__list">
+        <li class="menu__group">
+          <a href="index.html"> Главная</a><br>
+          <a href="./covid19"><img src="./images/covid19.png" alt="COVID-19" width="26" height="25"> COVID-19</a>
+        </li>
+        <center>
+          <div class="source">
+            <div id="time-node2">16:47</div>
+            <div class="source" id="dateDisplay">09.07.2020</div><br>
+        </center>
+      </ul>
+
+</nav>
+</header>
+</main>
+
+<script src="scripts/index.js"></script>
+<script src="scripts/time.js"></script>
+
+</html>
