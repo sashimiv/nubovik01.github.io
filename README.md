@@ -1,2 +1,1 @@
-# nubovik01.github.io
-nubovik01.github.io
+# Бан блеят :3
