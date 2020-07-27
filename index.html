@@ -3,9 +3,8 @@
 <html>
 
 <head>
-  <link rel="shortcut icon" href="favicon.png" type="image/png"/>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Сайт Нубовика</title>
+  <title id="setTitle">Сайт Нубовика</title>
   <meta name="description" content="Сайт Нубовuка">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width">
@@ -17,6 +16,7 @@
   <noscript><meta http-equiv="refresh" content="0; URL=badbrowser.html"></noscript>
 
   <script data-ad-client="ca-pub-9527754465191175" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  
 <script>
   // Отправка некоторых данных в консолъ.
   console.log(`Файлы Cookie: \n${document.cookie}`);
@@ -29,6 +29,41 @@
   } else {
     console.log(`Пользователь с компьютера`)
   }
+
+  // Изменение названия страницы (Как у VK, почти xD)
+  // Баганное изменение названия страницы конечно.... Но хотя бы что-то)
+  function setTitle() {
+    document.getElementById('setTitle').innerHTML = "Сайт Нубовика - 🤡"
+  }
+  setInterval(setTitle, 1300);
+
+  function setTitle2() {
+    document.getElementById('setTitle').innerHTML = "Сайт Нубовика"
+  }
+  setInterval(setTitle2, 2100);
+
+  // Динамическое изменение favicon сайта.
+    var partName = "./images/favicon";
+    var extensionFile = ".png";
+    var quantityFiles = 2;
+    var link = document.createElement("LINK");
+    var head = document.getElementsByTagName("HEAD")[0];
+ 
+    link.setAttribute("rel", "shortcut icon");
+    link.setAttribute("href", getFavicon());
+    if(head.childNodes.length){
+        head.insertBefore(link, head.childNodes[0]);
+    }
+    else{
+        head.appendChild(link);
+    }
+ 
+    function getFavicon(){
+        var num = Math.ceil(Math.random() * quantityFiles);
+        var fullName = partName + num + extensionFile;
+ 
+        return fullName;
+    };
 
   // AAB - Функция AntiAdBlock
   window.onload = function () {
@@ -107,7 +142,7 @@
 <!-- /Alerts -->
 
 <main class="main-element">
-
+  
 <body>
 <center><br>
 <h2><img src="favicon.png" width="27" height="29"> Cайт Нубовика</h2>
