@@ -4,7 +4,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title id="setTitle">Сайт Нубовика</title>
+  <title>Сайт Нубовика</title>
   <meta name="description" content="Сайт Нубовuка">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width">
@@ -31,14 +31,13 @@
   }
 
   // Изменение названия страницы (Как у VK, почти xD)
-  // Баганное изменение названия страницы конечно.... Но хотя бы что-то)
   function setTitle() {
-    document.getElementById('setTitle').innerHTML = "Сайт Нубовика - 🤡"
+    document.title = "Сайт Нубовика - 🤡";
   }
   setInterval(setTitle, 1300);
 
   function setTitle2() {
-    document.getElementById('setTitle').innerHTML = "Сайт Нубовика"
+    document.title = "Сайт Нубовика";
   }
   setInterval(setTitle2, 2100);
 
@@ -276,5 +275,4 @@
 
 <script src="scripts/index.js"></script>
 <script src="scripts/time.js"></script>
-
 </html>
