@@ -1,6 +1,6 @@
 var timeNode2 = document.getElementById('time-node2');
 function getCurrentTimeString2(dots) {
-  var timeString = new Date().toTimeString().replace(/:[0-9]{2,2} .*/, '');
+  var timeString = new Date().toTimeString().replace(/:[0-9]{2} .*/, '');
   return dots ? timeString : timeString.replace(/:/, ' ');
 }
 setInterval(
