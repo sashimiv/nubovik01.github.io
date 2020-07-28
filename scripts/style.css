@@ -242,12 +242,6 @@ LEVEL 3. MOBILE ANIMATION STYLES
   -webkit-transition: width .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
     height .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
     -webkit-transform .3s cubic-bezier(0.04, -0.1, 0.29, 0.98);
-  transition: width .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
-    height .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
-    -webkit-transform .3s cubic-bezier(0.04, -0.1, 0.29, 0.98);
-  transition: transform .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
-    width .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
-    height .3s cubic-bezier(0.04, -0.1, 0.29, 0.98);
   transition: transform .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
     width .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
     height .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
@@ -262,7 +256,6 @@ LEVEL 3. MOBILE ANIMATION STYLES
 .hamburger__button:before, .hamburger__button:after{
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
-  transition-property: transform;
   transition-property: transform, -webkit-transform;
 }
 
@@ -275,8 +268,6 @@ LEVEL 3. MOBILE ANIMATION STYLES
 
 .hamburger__label{
   -webkit-transition-property: opacity, -webkit-transform;
-  transition-property: opacity, -webkit-transform;
-  transition-property: transform, opacity;
   transition-property: transform, opacity, -webkit-transform;
 }
 
