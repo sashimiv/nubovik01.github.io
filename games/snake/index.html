@@ -121,7 +121,7 @@ function loop()
 
   // paint the snake itself with the tail elements
   ctx.fillStyle = 'lime';
-  for( var i = 0; i < trail.length; i++ )
+  for( let i = 0; i < trail.length; i++ )
   {
     ctx.fillStyle = trail[i].color || 'lime';
     ctx.fillRect(trail[i].x, trail[i].y, pw, ph);
@@ -144,7 +144,7 @@ function loop()
   // self collisions
   if( trail.length >= tail && gs )
   {
-    for( var i = trail.length - tailSafeZone; i >= 0; i-- )
+    for( let i = trail.length - tailSafeZone; i >= 0; i-- )
     {
       if(
         px < (trail[i].x + pw)
@@ -157,7 +157,7 @@ function loop()
         tail = 10; // cut the tail
         speed = baseSpeed; // cut the speed (flash nomore lol xD)
 
-        for( var t = 0; t < trail.length; t++ )
+        for( let t = 0; t < trail.length; t++ )
         {
           // highlight lossed area
           trail[t].color = 'red';
@@ -170,14 +170,14 @@ function loop()
   }
 
   // paint apples
-  for( var a = 0; a < apples.length; a++ )
+  for( let a = 0; a < apples.length; a++ )
   {
     ctx.fillStyle = apples[a].color;
     ctx.fillRect(apples[a].x, apples[a].y, aw, ah);
   }
 
   // check for snake head collisions with apples
-  for( var a = 0; a < apples.length; a++ )
+  for( let a = 0; a < apples.length; a++ )
   {
     if(
       px < (apples[a].x + pw)
