@@ -77,7 +77,8 @@
     `
 
     document.getElementsByClassName( "header" )[0].remove();
-    console.log(`Удалено: \nМеню`)
+    document.getElementsByClassName( "ad" )[0].remove();
+    console.log(`Удалено: \n1) Меню\n2) Маленъкая надписъ "Реклама"`)
     }
   }
 
@@ -146,7 +147,7 @@
 <h1><img src="https://crafatar.com/avatars/02d7ebafa2304027a4289226ece1843a?size=480&overlay" width="25" height="25"> CАЙТ НУБОВИКА</h1>
    <!-- Рекламный блок №1 -->
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <small>Реклама</small>
+        <small class="ad">Реклама</small> /* P.S: Класса "ad" не существует, он сделан для того, чтобы надписъ "Реклама" удаляласъ, если включен AdBlock. */
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9527754465191175" data-ad-slot="1193693488" data-ad-format="auto" data-full-width-responsive="true"> </ins>
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
@@ -212,20 +213,20 @@
     </div><br>
 
     <div class="block">
-    <b>Комментарии</b>
-      <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
-      <script type="text/javascript">VK.init({apiId: 7543607, onlyWidgets: true});</script>
+        <b>Комментарии</b>
+        <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+        <script type="text/javascript">VK.init({apiId: 7543607, onlyWidgets: true});</script>
         <div id="vk_comments"></div>
           <script type="text/javascript">VK.Widgets.Comments("vk_comments", {limit: 1, width: "50", attach: "*"});</script>
         </div>
     </div>
 
   <div class="top_otstup">
-  <div class="adblock">
-    <b>Реклама</b>
-    <img src="./images/forAD.png">
+    <div class="adblock">
+      <b>Реклама</b>
+      <img src="./images/forAD.png">
     </div>
-</div>
+  </div>
 <!-- /Блоки -->
 </center>
 </body>
