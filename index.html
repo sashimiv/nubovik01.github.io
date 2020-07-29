@@ -14,15 +14,15 @@
   <link rel="stylesheet" href="./scripts/alerts.css">
   <link rel="stylesheet" href="./scripts/darkteme.css">
   <noscript><meta http-equiv="refresh" content="0; URL=badbrowser.html"></noscript>
-
   <script data-ad-client="ca-pub-9527754465191175" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  
+</head>
+ 
 <script>
   // Отправка некоторых данных в консолъ.
   console.log(`Файлы Cookie: \n${document.cookie}`);
   console.log(`Браузер: \n${navigator.userAgent}`)
 
-  // Определяем, с телефона человек или с компьютера.
+  // Определяем, с телефона человек зашёл на сайт или с компьютера.
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     console.log(`Пользователь с телефона`)
 
@@ -32,7 +32,7 @@
 
   // Изменение названия страницы (Как у VK, почти xD)
   function setTitle() {
-    document.title = "Сайт Нубовика - 🤡";
+    document.title = "Сайт Нубовика - 👍🏻";
   }
   setInterval(setTitle, 1300);
 
@@ -41,7 +41,7 @@
   }
   setInterval(setTitle2, 2100);
 
-  // Динамическое изменение favicon сайта.
+  // Динамическое, наверное, изменение favicon сайта.
     var partName = "./images/favicon";
     var extensionFile = ".png";
     var quantityFiles = 2;
@@ -91,7 +91,7 @@
     console.log("Пользователь зашёл с другого браузера.");
 
 
-  //Дата
+  // Дата
   function getDate() {
     var date = new Date();
     var month = date.getMonth()
@@ -129,23 +129,22 @@
   </script>
   <div id="vk_community_messages"></div>
   <!-- /VK Widget -->
-</head>
 
-<!--  Alerts  -->
-<big id="offab"></big>
+  <!--  Alerts  -->
+  <big id="offab"></big>
 
-<div class="alertblue">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span> 
-  <img src="./images/cookie.gif" width="16" height="16"></img> На сайте используются файлы Cookies, это позволяет нам делать его лучше. Продолжая пользоваться сайтом, вы соглашаетесь с использованием файлов cookie.
-</div>
-<!-- /Alerts -->
+  <div class="alertblue">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span> 
+    <img src="./images/cookie.gif" width="16" height="16"></img> На сайте используются файлы Cookies, это позволяет нам делать его лучше. Продолжая пользоваться сайтом, вы соглашаетесь с использованием файлов cookie.
+  </div>
+  <!-- /Alerts -->
 
 <main class="main-element">
   
 <body>
 <center><br>
 <h1><img src="https://crafatar.com/avatars/02d7ebafa2304027a4289226ece1843a?size=480&overlay" width="25" height="25"> CАЙТ НУБОВИКА</h1>
-  <!-- Рекламный блок №1 -->
+    <!-- Рекламный блок №1 -->
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       <ins class="adsbygoogle"
       style="display:block"
@@ -158,19 +157,6 @@
       (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
   <!-- /Рекламный блок №1 -->
-  <!-- Рекламный блок №2 -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <ins class="adsbygoogle"
-      style="display:block"
-      data-ad-client="ca-pub-9527754465191175"
-      data-ad-slot="5384946281"
-      data-ad-format="auto"
-      data-full-width-responsive="true">
-    </ins>
-    <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
-  <!-- /Рекламный блок №2 -->
 
 <!-- Блоки -->
 <div class="left_otstup">
@@ -191,7 +177,7 @@
     </div><br>
 
     <div class="block">
-      <b>Настройки</b>
+      <b>Тёмная тема</b>
       <nav>
         <div class="theme-switch-wrapper">
           <label class="theme-switch" for="checkbox">
