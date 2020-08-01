@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="ru">
 
     <head>
         <link rel="shortcut icon" href="favicon.png" type="image/png"/>
@@ -26,6 +26,7 @@
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css" rel="stylesheet">
       <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <title>Отправка вебхука</title>
       <style>
   textarea {
     resize: none;
@@ -57,10 +58,10 @@
           </div>
           <div class="card card-panel">
               <div class="input-field">
-                  <textarea id="url" style="height: 45px;" placeholder="Ссылка на Вебхук"></textarea> 
+                  <label for="url"></label><textarea id="url" style="height: 45px;" placeholder="Ссылка на Вебхук"></textarea>
               </div>
               <div class="input-field">
-                  <textarea id="content" style="height: 150px;" placeholder="Сообщение">
+                  <label for="content"></label><textarea id="content" style="height: 150px;" placeholder="Сообщение">
 
 
 __https://nubovik01.github.io__
@@ -68,7 +69,7 @@ __https://nubovik01.github.io__
               </div>
               <div class="row">
                   <div class="input-field s6 col">
-                      <textarea id="username" style="height: 45px;" placeholder="Имя для Вебхука">Сайт Нубовика</textarea> 
+                      <label for="username"></label><textarea id="username" style="height: 45px;" placeholder="Имя для Вебхука">Сайт Нубовика</textarea>
                   </div>
                   <div class="input-field s6 col">
                       <input id="avatar_url" type="text"> <label for="avatar_url" class="">Ссылка на иконку для Вебхука</label>
