@@ -14,19 +14,19 @@
 
 /* Чтобы блоки были в ряд */
 .left_otstup {
-  float: left; /* Обтекание справа */ 
+  float: left; /* Право */ 
   margin-left: 5%;
   margin-right: 5%;
  }
 
 .right_otstup {
-  float: right; /* Обтекание справа */ 
+  float: right; /* Лево */ 
   margin-left: 5%;
   margin-right: 5%;
  }
 
 .top_otstup {
-  float: top; /* Обтекание справа */ 
+  float: top; /* Середина */ 
   margin-left: 5%;
   margin-right: 5%;
  }
