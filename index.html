@@ -141,29 +141,36 @@
   </div>
   <!-- /Alerts -->
 
+<body>
 <main class="main-element">
 
-<body>
-<div style="text-align: center;"><br>
-<h1><img src="https://crafatar.com/avatars/02d7ebafa2304027a4289226ece1843a?size=480&overlay" width="25" height="25" alt="аватарка"> CАЙТ НУБОВИКА</h1>
+<div><br>
+<h1 class="center"><img src="https://crafatar.com/avatars/02d7ebafa2304027a4289226ece1843a?size=480&overlay" width="25" height="25" alt="аватарка"> CАЙТ НУБОВИКА</h1>
 
 <!-- Блоки -->
 <div class="left_otstup">
-  <div class="block">
+  <div class="block center">
     <b>Дискорд-сервер</b>
       <iframe src="https://discord.com/widget?id=457858774099689479&theme=dark" width="300" height="430" allowtransparency="true" style="border: none"></iframe>
     </div><br>
 
   <div class="block">
-     <b>COVID-19</b>
-     <div style="text-align: center;">
+     <b class="center center">COVID-19</b>
+     <div>
       <iframe src="https://yandex.ru/covid19/stat/widget/light/?geoId=10000" width=200 height=170 frameborder="0"></iframe>
      </div>
   </div>
 </div>
-  
+
+  <div class="top_otstup">
+    <div class="adblock center">
+      <b>Реклама</b>
+      <img src="./images/forAD.png" alt="реклама">
+    </div>
+  </div>
+
 <div class="right_otstup">
-  <div class="block">
+  <div class="block center">
     <b>Музыка</b>
       <audio controls>
         <source src="http://ep128server.streamr.ru:8033/eptop128" type="audio/ogg; codecs=vorbis">
@@ -172,7 +179,7 @@
       <img src="https://metrika-informer.com/informer/65547946/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="65547946" data-lang="ru"/>
     </div><br>
 
-    <div class="block">
+    <div class="block center">
       <b>Тёмная тема</b>
       <nav>
         <div class="theme-switch-wrapper">
@@ -213,23 +220,14 @@
     </div><br>
 
     <div class="block">
-        <b>Комментарии</b>
+        <b class="center">Комментарии</b>
         <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
         <script type="text/javascript">VK.init({apiId: 7543607, onlyWidgets: true});</script>
         <div id="vk_comments">
           <script type="text/javascript">VK.Widgets.Comments("vk_comments", {limit: 1, width: "50", attach: "*"});</script>
         </div>
     </div><br>
-  
-<div class="top_otstup">
-  <div class="adblock">
-    <b>Реклама</b>
-    <img src="./images/forAD.png" alt="реклама">
-  </div>
 </div>
-<!-- /Блоки -->
-</div>
-</body>
 
   <header class="header">
     <div class="hamburger">
@@ -262,7 +260,9 @@
 
 </nav>
 </header>
+</div>
 </main>
+</body>
 
 <script src="scripts/index.js"></script>
 <script src="scripts/time.js"></script>
