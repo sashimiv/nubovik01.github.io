@@ -11,7 +11,7 @@
     </head>
 
     <script type = "text/javascript">
-      var ver = navigator.appVersion;
+      const ver = navigator.appVersion;
         if (ver.indexOf("MSIE") !== -1)
         {
             console.log("Пользователь зашёл с IE");
@@ -118,10 +118,10 @@ __https://nubovik01.github.io__
       <script>
       $(function() {
           $('#Submit').click(function() {
-          var url = $("#url").val();
-          var content = $("#content").val();
-          var username = $("#username").val();
-          var avatar_url = $("#avatar_url").val();
+          let url = $("#url").val();
+          let content = $("#content").val();
+          let username = $("#username").val();
+          let avatar_url = $("#avatar_url").val();
           $.post(url,
       {"content": content, "username": username, "avatar_url": avatar_url},
           function(){
