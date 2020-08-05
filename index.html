@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
-<!-- Сайт создан Нубовиком • 2020-2020 год -->
+<!-- Сайт создан Нубовиком • 2020-2020 год, JSUnresolvedVariable -->
+<!--suppress JSUnresolvedFunction, JSUnresolvedVariable -->
 <html lang="ru">
 
 <head>
@@ -70,13 +71,13 @@
   if ( aab[0] && aab[0].clientHeight == 0 ) { 
     console.log(`Пользователь использует AdBlock`)
     document.getElementById('offab').innerHTML = `
-    <div class="alertred">
+    <div class="alertRed">
     <center>Наш сайт работает <b>только</b> за счёт рекламы! Пожалуйста <b>выключите</b> свой <b>AdBlock</b></center>
     </div>
     `
 
     document.getElementsByClassName( "header" )[0].remove();
-    document.getElementsByClassName( "adtext" )[0].remove();
+    document.getElementsByClassName( "adText" )[0].remove();
     console.log(`Удалено: \n1) Меню\n2) Маленъкая надписъ "Реклама"`)
     }
   }
@@ -108,7 +109,7 @@
   <script type="text/javascript">
     (function (m, e, t, r, i, k, a) {
       m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-      m[i].l = 1 * new Date(); k = e.createElement(t); a = e.getElementsByTagName(t)[0]; k.async = 1; k.src = r; a.parentNode.insertBefore(k, a)
+      m[i].l = 1 * new Date(); k = e.createElement(t); a = e.getElementsByTagName(t)[0]; k.async = true; k.src = r; a.parentNode.insertBefore(k, a)
     })
       (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
 
@@ -125,7 +126,7 @@
 
   <!-- VK Widget -->
   <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
-  <script type="text/javascript">
+<script type="text/javascript">
   VK.Widgets.CommunityMessages("vk_community_messages", 191048799, {expandTimeout: "10000",tooltipButtonText: "Вы нашли ошибку или у вас есть вопрос?"});
   </script>
   <div id="vk_community_messages"></div>
@@ -134,8 +135,8 @@
   <!--  Alerts  -->
   <div style="font-size: large" id="offab"></div>
 
-  <div class="alertblue">
-    <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span> 
+  <div class="alertBlue">
+    <span class="closeBtn" onclick="this.parentElement.style.display='none';">×</span>
     <img src="./images/cookie.gif" width="16" height="16" alt="печенька"/> На сайте используются файлы Cookies, это позволяет нам делать его лучше. Продолжая пользоваться сайтом, вы соглашаетесь с использованием файлов cookie.
   </div>
   <!-- /Alerts -->
@@ -162,7 +163,7 @@
 </div>
 
   <div class="top_otstup">
-    <div class="adblock center">
+    <div class="adBlock center">
       <b>Реклама</b>
       <img src="./images/forAD.png" alt="реклама">
     </div>
@@ -238,8 +239,8 @@
       <ul class="list menu__list">
     <!-- Рекламный блок №1 -->
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-      <div style="text-align: center;"><small class="adtext">Реклама</small></div>
-      <!-- P.S: Класса "adtext" не существует, он сделан для того, чтобы надписъ "Реклама" удаляласъ, если включен AdBlock. */ -->
+      <div style="text-align: center;"><small class="adText">Реклама</small></div>
+      <!-- P.S: Класса "adText" не существует, он сделан для того, чтобы надписъ "Реклама" удаляласъ, если включен AdBlock. */ -->
       <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9527754465191175" data-ad-slot="1193693488" data-ad-format="auto" data-full-width-responsive="true"> </ins>
       <script>
         (adsbygoogle = window.adsbygoogle || []).push({});

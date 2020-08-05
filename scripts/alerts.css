@@ -1,28 +1,28 @@
-.alertred {
+.alertRed {
     padding: 10px;
     background-color: #f44336;
     color: white;
 }
 
-.alertgreen {
+.alertGreen {
     padding: 10px;
     background-color: #46f436;
     color: white;
 }
 
-.alertyellow {
+.alertYellow {
     padding: 10px;
     background-color: #f4e736;
     color: white;
 }
 
-.alertblue {
+.alertBlue {
     padding: 10px;
     background-color: #3659f4;
     color: white;
 }
 
-.closebtn {
+.closeBtn {
     margin-left: 15px;
     color: white;
     font-weight: bold;
@@ -33,6 +33,6 @@
     transition: 0.9s;
 }
 
-.closebtn:hover {
+.closeBtn:hover {
     color: black;
 }
