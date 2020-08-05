@@ -12,7 +12,7 @@
 
     <script type = "text/javascript">
       var ver = navigator.appVersion;
-        if (ver.indexOf("MSIE") != -1)
+        if (ver.indexOf("MSIE") !== -1)
         {
             console.log("Пользователь зашёл с IE");
             window.location.href="badbrowser.html";
@@ -117,7 +117,7 @@ __https://nubovik01.github.io__
       </script> 
       <script>
       $(function() {
-          $('#Submit').click(function(e) {
+          $('#Submit').click(function() {
           var url = $("#url").val();
           var content = $("#content").val();
           var username = $("#username").val();

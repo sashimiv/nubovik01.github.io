@@ -20,7 +20,7 @@
 <script>
   // Отправка некоторых данных в консолъ.
   console.log(`Файлы Cookie: \n${document.cookie}`);
-  console.log(`Браузер: \n${navigator.userAgent}`)
+  console.log(`Браузер: \n${navigator.userAgent}`);
 
   // Определяем, с телефона человек зашёл на сайт или с компьютера.
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -59,10 +59,9 @@
  
     function getFavicon(){
         var num = Math.ceil(Math.random() * quantityFiles);
-        var fullName = partName + num + extensionFile;
  
-        return fullName;
-    };
+        return partName + num + extensionFile;
+    }
 
   /* AAB - Функция AntiAdBlock (временно выключена)
   window.onload = function () {
@@ -85,7 +84,7 @@
 
   // Badbrowser
   var ver = navigator.appVersion;
-  if (ver.indexOf("MSIE") != -1) {
+  if (ver.indexOf("MSIE") !== -1) {
     console.log("Пользователь зашёл с IE");
     window.location.href = "badbrowser.html";
   }
@@ -96,7 +95,7 @@
   // Дата
   function getDate() {
     var date = new Date();
-    var month = date.getMonth()
+    var month = date.getMonth();
     var day = date.getDate();
     var year = date.getFullYear();
 
@@ -109,7 +108,7 @@
   <script type="text/javascript">
     (function (m, e, t, r, i, k, a) {
       m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
-      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+      m[i].l = 1 * new Date(); k = e.createElement(t); a = e.getElementsByTagName(t)[0]; k.async = 1; k.src = r; a.parentNode.insertBefore(k, a)
     })
       (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
 
