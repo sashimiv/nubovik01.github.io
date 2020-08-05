@@ -15,18 +15,22 @@
 /* Чтобы блоки были в ряд */
 .left_otstup {
   float: left; /* Право */ 
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 4.4%;
+  margin-right: 4.4%;
  }
 
 .right_otstup {
   float: right; /* Лево */ 
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 4.4%;
+  margin-right: 4.4%;
  }
 
 .top_otstup {
-  float: top; /* Середина */ 
-  margin-left: 5%;
-  margin-right: 5%;
+  display: inline-block;
+  margin-left: 4.4%;
+  margin-right: 4.4%;
  }
+
+.center {
+  text-align: center;
+}
