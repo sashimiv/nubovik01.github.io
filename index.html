@@ -42,11 +42,11 @@
   setInterval(setTitle2, 2100);
 
   // Динамическое, наверное, изменение favicon сайта.
-    var partName = "./images/favicon";
-    var extensionFile = ".png";
-    var quantityFiles = 2;
-    var link = document.createElement("LINK");
-    var head = document.getElementsByTagName("HEAD")[0];
+    const partName = "./images/favicon";
+    const extensionFile = ".png";
+    const quantityFiles = 2;
+    let link = document.createElement("LINK");
+    let head = document.getElementsByTagName("HEAD")[0];
  
     link.setAttribute("rel", "shortcut icon");
     link.setAttribute("href", getFavicon());
@@ -58,7 +58,7 @@
     }
  
     function getFavicon(){
-        var num = Math.ceil(Math.random() * quantityFiles);
+        let num = Math.ceil(Math.random() * quantityFiles);
  
         return partName + num + extensionFile;
     }
@@ -83,7 +83,7 @@
   */
 
   // Badbrowser
-  var ver = navigator.appVersion;
+  const ver = navigator.appVersion;
   if (ver.indexOf("MSIE") !== -1) {
     console.log("Пользователь зашёл с IE");
     window.location.href = "badbrowser.html";
@@ -94,10 +94,10 @@
 
   // Дата
   function getDate() {
-    var date = new Date();
-    var month = date.getMonth();
-    var day = date.getDate();
-    var year = date.getFullYear();
+    let date = new Date();
+    let month = date.getMonth();
+    let day = date.getDate();
+    let year = date.getFullYear();
 
     document.getElementById('dateDisplay').innerHTML = day + '.' + month + '.' + year;
   }
