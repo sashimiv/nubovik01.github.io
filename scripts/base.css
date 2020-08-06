@@ -511,7 +511,7 @@ input.BlockSearchInput {
 }
 
 .Dropdown--r {
-  -ms-flex-pack: left;
+  -ms-flex-pack: start;
   justify-content: left;
   -ms-flex-align: center;
   align-items: center
@@ -554,7 +554,7 @@ input.BlockSearchInput {
 }
 
 .Dropdown--l {
-  -ms-flex-pack: left;
+  -ms-flex-pack: start;
   justify-content: left;
   -ms-flex-align: center;
   align-items: center;
@@ -580,7 +580,7 @@ input.BlockSearchInput {
 }
 
 .Dropdown--align-left {
-  -ms-flex-pack: left;
+  -ms-flex-pack: start;
   justify-content: left
 }
 
@@ -1366,7 +1366,7 @@ textarea.EditableLabel__textarea {
 }
 
 .Progress__item:first-child {
-  animation-delay: 0
+  animation-delay: 0ms
 }
 
 .Progress__item:nth-child(2) {
@@ -2122,7 +2122,7 @@ textarea.EditableLabel__textarea {
 }
 
 .Tooltip--r {
-  -ms-flex-pack: left;
+  -ms-flex-pack: start;
   justify-content: left;
   -ms-flex-align: center;
   align-items: center
@@ -2178,7 +2178,7 @@ textarea.EditableLabel__textarea {
 }
 
 .Tooltip--l {
-  -ms-flex-pack: left;
+  -ms-flex-pack: start;
   justify-content: left;
   -ms-flex-align: center;
   align-items: center;
@@ -2209,7 +2209,7 @@ textarea.EditableLabel__textarea {
 }
 
 .Tooltip--align-left {
-  -ms-flex-pack: left;
+  -ms-flex-pack: start;
   justify-content: left
 }
 
@@ -2670,6 +2670,7 @@ textarea.EditableLabel__textarea {
   display: none
 }
 
+/*noinspection CssUnresolvedCustomProperty*/
 .VerifiedMarker {
   width: 12px;
   height: 12px;
