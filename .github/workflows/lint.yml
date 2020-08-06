@@ -12,6 +12,8 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12
+    - name: install eslint
+      run: npm install eslint
     - name: yarn install
       run: yarn install
     - name: eslint
