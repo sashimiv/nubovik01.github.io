@@ -651,7 +651,7 @@ a.button_blue:hover, a.button_gray:hover, a.button_light_gray:hover, a.button_li
   opacity: 0;
   cursor: default;
   z-index: 110;
-  -webkit-perspective: 1000;
+  -webkit-perspective: 1000px;
   -webkit-backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
   display: none;
@@ -4445,7 +4445,9 @@ a.button_blue:hover, a.button_gray:hover, a.button_light_gray:hover, a.button_li
 
 .audio_w_covers .audio_row .audio_row__cover {
   image-rendering: -o-crisp-edges;
+  /*noinspection CssInvalidPropertyValue*/
   image-rendering: -webkit-optimize-contrast;
+  /*noinspection CssInvalidPropertyValue*/
   image-rendering: optimize-contrast;
   -ms-interpolation-mode: nearest-neighbor;
   border-radius: 4px;
@@ -7415,6 +7417,7 @@ body.no_stl #stl_bg {
   text-overflow: ellipsis;
   white-space: nowrap;
   display: none;
+  /*noinspection CssInvalidPropertyValue*/
   width: expression(this.width > 200 ? "200px":"")
 }
 
@@ -9899,6 +9902,7 @@ body.mac .narrow_column.fixed {
   -moz-osx-font-smoothing: auto
 }
 
+/*noinspection CssInvalidPropertyValue*/
 .crisp_image {
   image-rendering: -o-crisp-edges;
   image-rendering: -webkit-optimize-contrast;
@@ -10228,7 +10232,7 @@ button.ui_load_more_btn {
   transition: transform 200ms ease, top 200ms ease, left 200ms ease;
   -webkit-transform: translateZ(0);
   -webkit-backface-visibility: hidden;
-  -webkit-perspective: 1000
+  -webkit-perspective: 1000px
 }
 
 .ui_gridsorter_cont .ui_gridsorter_moveable {

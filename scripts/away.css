@@ -14,7 +14,6 @@
 }
 
 .away_content.away_image {
-  background: url(/images/pics/spamfight.gif) no-repeat -8px 25px;
   padding-left: 210px;
   min-height: 170px
 }
@@ -47,7 +46,6 @@
 
 .away_logo {
   display: inline-block;
-  background: url("/images/svg_icons/ic_head_logo.svg") no-repeat 50%/contain;
   width: 34px;
   height: 19px;
   margin: 18px 0 0 25px
