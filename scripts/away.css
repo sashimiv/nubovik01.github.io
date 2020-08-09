@@ -74,13 +74,11 @@
 .browser_icon {
   width: 80px;
   height: 80px;
-  background: url(/images/browsers.png?2) no-repeat 0 0;
   margin-bottom: 10px
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .browser_icon {
-    background-image: url(/images/browsers_2x.png?2);
     background-size: 79px 496px
   }
 }
