@@ -1,12 +1,17 @@
 <!DOCTYPE HTML>
-<!-- Сайт создан Нубовиком • 2020-2020 год, JSUnresolvedVariable -->
+<!-- Сайт создан Нубовиком • 2020 год, JSUnresolvedVariable -->
 <!--suppress JSUnresolvedFunction, JSUnresolvedVariable -->
 <html lang="ru">
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>Сайт Нубовика</title>
-  <meta name="description" content="Главная странuца. Сайт Нубовuка">
+  <meta name="description" content="Главная странuца. 
+  Сайт Нубовuка
+  
+  Другая информация:
+  https://vk.com/nubovik02
+  https://discord.gg/3weA68d">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="./scripts/style.css">
@@ -19,8 +24,7 @@
     <meta http-equiv="refresh" content="0; URL=badbrowser.html">
   </noscript>
   
-  <script data-ad-client="ca-pub-9527754465191175" async
-   src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script data-ad-client="ca-pub-9527754465191175" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
 <script>
@@ -70,7 +74,7 @@
         return partName + num + extensionFile;
     }
 
-    /* AAB - Функция AntiAdBlock (временно выключена)
+    /* AAB - Функция AntiAdBlock (временно выключена т.к сайт на гитхабе)
     window.onload = function () {
     var aab = document.getElementsByClassName( 'adsbygoogle' ); // Если реклама вырезана, то:
 
@@ -89,7 +93,7 @@
     }
     */
 
-    // Badbrowser
+    // Bad browser
     const ver = navigator.appVersion;
     if (ver.indexOf("MSIE") !== -1) {
         console.log("Пользователь зашёл с IE");
@@ -134,6 +138,7 @@
         trackHash: true
     });
 </script>
+
 <noscript>
   <div><img src="https://mc.yandex.ru/watch/65547946" style="position:absolute; left:-9999px;" alt=""/></div>
 </noscript>
@@ -141,12 +146,7 @@
 
 <!-- VK Widget -->
 <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
-<script type="text/javascript">
-    VK.Widgets.CommunityMessages("vk_community_messages", 191048799, {
-        expandTimeout: "10000",
-        tooltipButtonText: "Вы нашли ошибку или у вас есть вопрос?"
-    });
-</script>
+<script type="text/javascript"> VK.Widgets.CommunityMessages("vk_community_messages", 191048799, { expandTimeout: "10000", tooltipButtonText: "Вы нашли ошибку или у вас есть вопрос?" });</script>
 <div id="vk_community_messages"></div>
 <!-- /VK Widget -->
 
@@ -168,37 +168,30 @@
     <!-- Блоки -->
     <div class="left_otstup">
       <div class="block center">
-        <b>Дискорд-сервер</b>
-        <iframe src="https://discord.com/widget?id=457858774099689479&theme=dark"
-                width="300"
-                height="430"
-                allowtransparency="true" style="border: none">
-        </iframe>
+        <p class="center"><b>Дискорд-сервер</b></p>
+        <iframe src="https://discord.com/widget?id=457858774099689479&theme=dark" width="300" height="430" allowtransparency="true" style="border: none"></iframe>
       </div>
       <br>
 
-      <div class="block">
-        <b class="center">COVID-19</b>
+      <div class="block center">
+        <p class="center"><b>COVID-19</b></p>
         <div>
-          <iframe src="https://yandex.ru/covid19/stat/widget/light/?geoId=10000" 
-                  width=200
-                  height=170
-                  style="border: none;">
-          </iframe>
+          <iframe src="https://yandex.ru/covid19/stat/widget/light/?geoId=10000" width=200 height=170 style="border: none;"></iframe>
         </div>
       </div>
     </div>
 
     <div class="top_otstup">
       <div class="adBlock center">
-        <b>Реклама</b>
+        <p class="center"><b>Реклама</b></p>
         <img src="./images/forAD.png" alt="реклама">
+        <small style="color: #8a8589 ">СКОРО</small>
       </div>
     </div>
 
     <div class="right_otstup">
       <div class="block center">
-        <b>Музыка</b>
+        <p class="center"><b>Музыка</b></p>
         <audio controls>
           <source src="http://ep128server.streamr.ru:8033/eptop128" type="audio/ogg; codecs=vorbis">
           <source src="http://eptop128server.streamr.ru:8033/eptop128" type="audio/mpeg">
@@ -209,7 +202,7 @@
       <br>
 
       <div class="block center">
-        <b>Тёмная тема</b>
+        <p class="center"><b>Тёмная тема</b></p>
         <nav>
           <div class="theme-switch-wrapper">
             <label class="theme-switch" for="checkbox">
@@ -249,17 +242,12 @@
       </div>
       <br>
 
-      <div class="block">
-        <b class="center">Комментарии</b>
+      <div class="block center">
+        <p class="center"><b>Комментарии</b></p>
         <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
-        <script type="text/javascript">VK.init({apiId: 7543607, onlyWidgets: true});</script>
+        <script type="text/javascript"> VK.init({ apiId: 7543607, onlyWidgets: true });</script>
         <div id="vk_comments">
-          <script type="text/javascript">VK.Widgets.Comments("vk_comments", {
-              limit: 1,
-              width: "50",
-              attach: "*"
-            });
-          </script>
+          <script type="text/javascript">VK.Widgets.Comments("vk_comments", { limit: 1, width: "50", attach: "*" }); </script>
         </div>
       </div>
       <br>
