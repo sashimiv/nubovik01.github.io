@@ -333,6 +333,7 @@ input.BlockSearchInput {
   width: 15px;
   height: 15px;
   border-radius: 3px;
+  /*noinspection CssUnknownProperty*/
   -ms-flex-negative: 0;
   flex-shrink: 0;
   border: solid 1px var(--steel_gray_140);
@@ -1692,6 +1693,7 @@ textarea.EditableLabel__textarea {
 .Select--secondary .Select__arrow {
   margin-left: 8px;
   display: block;
+  /*noinspection CssUnknownProperty*/
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 11px;
@@ -2389,6 +2391,7 @@ textarea.EditableLabel__textarea {
 }
 
 .Modal__headerCross {
+  /*noinspection CssUnknownProperty*/
   -ms-flex-negative: 0;
   flex-shrink: 0;
   padding: 0;
@@ -2440,6 +2443,7 @@ textarea.EditableLabel__textarea {
 }
 
 .Modal__footerHint {
+  /*noinspection CssUnknownProperty*/
   -ms-flex-item-align: center;
   align-self: center;
   -ms-flex-positive: 1;
@@ -2469,6 +2473,7 @@ textarea.EditableLabel__textarea {
 
 .Radio__control {
   margin-right: 8px;
+  /*noinspection CssUnknownProperty*/
   -ms-flex-negative: 0;
   flex-shrink: 0;
   display: -ms-flexbox;
@@ -2509,6 +2514,7 @@ textarea.EditableLabel__textarea {
 
 .Radio__input:checked + .Radio__control:before {
   content: "";
+  /*noinspection CssUnknownProperty*/
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 7px;
@@ -2690,6 +2696,7 @@ textarea.EditableLabel__textarea {
 }
 
 .OwnerName__verified {
+  /*noinspection CssUnknownProperty*/
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin-left: 1ch
@@ -2746,6 +2753,7 @@ textarea.EditableLabel__textarea {
   width: 28px;
   height: 9px;
   border-radius: 45px;
+  /*noinspection CssUnknownProperty*/
   -ms-flex-negative: 0;
   flex-shrink: 0;
   background: var(--steel_gray_140);
@@ -2812,6 +2820,7 @@ textarea.EditableLabel__textarea {
 
 .UpScrollButton__text {
   display: block;
+  /*noinspection CssUnknownProperty*/
   -ms-flex-negative: 0;
   flex-shrink: 0;
   height: 15px;
@@ -2828,6 +2837,7 @@ textarea.EditableLabel__textarea {
 }
 
 .UpScrollButton__arrow {
+  /*noinspection CssUnknownProperty*/
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 15px;
@@ -2869,9 +2879,10 @@ textarea.EditableLabel__textarea {
   transform: translateY(33.33%)
 }
 
-@supports ((-webkit-clip-path: inset(0 0)) or (clip-path: inset(0 0))) {
+@supports ((/*noinspection CssUnknownProperty*/-webkit-clip-path: inset(0 0)) or (clip-path: inset(0 0))) {
   .ActivityIndicator {
     overflow: visible;
+    /*noinspection CssUnknownProperty*/
     -webkit-clip-path: inset(-20% 0);
     clip-path: inset(-20% 0)
   }
