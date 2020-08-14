@@ -894,7 +894,7 @@ a.button_blue:hover, a.button_gray:hover, a.button_light_gray:hover, a.button_li
 .eltt.eltt_fancy {
   border-radius: 8px !important;
   border: none !important;
-  box-shadow: 0 5px 26px 0px rgba(0, 0, 0, 0.32) !important
+  box-shadow: 0 5px 26px 0 rgba(0, 0, 0, 0.32) !important
 }
 
 .eltt.eltt_fancy.eltt_top .eltt_arrow_back {
@@ -3666,10 +3666,8 @@ a.button_blue:hover, a.button_gray:hover, a.button_light_gray:hover, a.button_li
   background: none;
   color: var(--blue_600);
   font-family: -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, Geneva, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai", sans-serif, arial, Tahoma, verdana;
-  font-size: 13px;
   outline: 0;
   padding: 0;
-  line-height: 1;
   font-size: inherit;
   line-height: 16px
 }
@@ -4392,7 +4390,7 @@ a.button_blue:hover, a.button_gray:hover, a.button_light_gray:hover, a.button_li
 
 .audio_w_covers .audio_row.ui_gridsorter_moveable .audio_row_content {
   background-color: #fff;
-  box-shadow: 0px 2px 6px -3px rgba(0, 0, 0, 0.34);
+  box-shadow: 0 2px 6px -3px rgba(0, 0, 0, 0.34);
   border-radius: 4px
 }
 
@@ -6159,7 +6157,6 @@ body.mac #page_header_cont {
   position: absolute;
   left: 0;
   top: 0;
-  display: block;
   color: #fff;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
@@ -6417,7 +6414,7 @@ a.homelink:hover, a.unl:hover {
 }
 
 .ad_box_new {
-  border: 1px solid #dce3e9;
+  border: solid #dce3e9;
   border-width: 0 0 1px 0;
   padding: 0 0 11px 0;
   margin: 0;
@@ -6474,8 +6471,8 @@ a.ad_box_new:hover {
 
 .ad_box_friend {
   border-top-width: 1px;
-  border-bottom-width: 0px;
-  padding-bottom: 0px
+  border-bottom-width: 0;
+  padding-bottom: 0
 }
 
 .ad_box_friend .ad_body {
@@ -6609,7 +6606,6 @@ a.ad_box_new:hover {
 }
 
 .body_im .side_bar, .side_bar.sticky_top, .side_bar.sticky_top_force {
-  position: fixed;
   position: sticky;
   top: 0 !important
 }
@@ -7852,7 +7848,7 @@ body.mac #layer_stl .fixed {
   border-bottom: 1px solid #dae1e8;
   height: 24px;
   list-style-type: none;
-  margin: 0pt;
+  margin: 0;
   padding: 0 7px;
   vertical-align: bottom
 }
@@ -8128,7 +8124,7 @@ body.mac #layer_stl .fixed {
   left: 0;
   top: 0;
   display: none;
-  border-radius: 0px 0 6px;
+  border-radius: 0 0 6px;
   padding: 7px 10px
 }
 
@@ -8526,7 +8522,7 @@ ul.t0 .t_r a:hover {
   background-color: #fff;
   overflow: hidden;
   margin: 0;
-  border: 1px solid #fff;
+  border: solid #fff;
   border-width: 0 2px
 }
 
@@ -8554,7 +8550,7 @@ ul.t0 li.active_link a:hover b.tl1 b, ul.t0 li.active_link a b.tl1 b {
   background: #597da3;
   overflow: hidden;
   margin: 0;
-  border: 1px solid #9ab1c6;
+  border: solid #9ab1c6;
   border-width: 0 1px
 }
 
@@ -8927,7 +8923,6 @@ input.text.ts_input {
   width: 230px;
   border-radius: 14px;
   transition: background-color .05s, color .05s;
-  padding-left: 19px;
   border-left: 8px solid transparent;
   background-position: left 8px;
   color: var(--light_blue_100)
@@ -9490,7 +9485,7 @@ em.highlight {
 }
 
 h2.page_block_h2 {
-  margin: 0px;
+  margin: 0;
   font-size: inherit;
   font-weight: inherit;
   color: inherit
@@ -10029,7 +10024,7 @@ button.ui_load_more_btn {
   box-sizing: border-box;
   margin: 0 !important;
   background-color: #fff;
-  box-shadow: 0px 2px 6px -3px rgba(0, 0, 0, 0.34);
+  box-shadow: 0 2px 6px -3px rgba(0, 0, 0, 0.34);
   pointer-events: none;
   cursor: move
 }
@@ -10364,7 +10359,6 @@ button.ui_load_more_btn {
 
 .lazyload {
   transition: -webkit-filter 200ms ease-in-out;
-  transition: filter 200ms ease-in-out;
   transition: filter 200ms ease-in-out, -webkit-filter 200ms ease-in-out
 }
 
