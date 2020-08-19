@@ -3,11 +3,11 @@
   --primary-color: #302ae6;
   --secondary-color: #536390;
   --font-color: #000000;
-  --bg-color: #fff;
-  --heading-color: #292922;
+  --bg-color: #ffffff;
+  --heading-color: #111111;
   width: 100%;
   height: 100%;
-  min-height: 135vh;
+  min-height: 155vh;
   background-color: var(--bg-color);
   color: var(--font-color);
   font-family: "Oswald", sans-serif;

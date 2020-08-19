@@ -12,6 +12,12 @@
   border-radius: 100px;
 }
 
+/* Цвета для блоков (исполъзуется редко) */
+.cherryBlock {
+  --bg-color: #de3163;
+  background-color: var(--bg-color);
+}
+
 /* Чтобы блоки были в ряд */
 .left_otstup {
   float: left; /* Право */
