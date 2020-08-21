@@ -2,14 +2,14 @@
   background: #f3f3f3;
   width: 300px;
   padding: 15px;
-  border-radius: 10px;
+  border-radius: 4px;
 }
 
-.adBlock { /* Для рекламного блока */
-  background: #f3f3f3;
-  width: 300px;
-  padding: 15px;
-  border-radius: 100px;
+/* Block Head */
+.block_head {
+  height: 7px;
+  background-color: rgb(44, 143, 241);
+  border-radius: 10px 10px 0 0
 }
 
 /* Цвета для блоков (исполъзуется редко) */
