@@ -11,7 +11,3 @@ jobs:
         uses: Krizzu/eslint-check-action@v1.1.0
         with:
           ghToken: ${{ secrets.GITHUB_TOKEN }}
-      - name: ESlint
-        uses: getsentry/action-eslint-fix@v1
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
