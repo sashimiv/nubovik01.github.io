@@ -1,0 +1,4 @@
+- name: EsLLInt
+  uses: getsentry/action-eslint-fix@v1
+  with:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
