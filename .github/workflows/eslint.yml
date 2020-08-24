@@ -1,4 +1,11 @@
-- name: EsLLInt
-  uses: getsentry/action-eslint-fix@v1
-  with:
-    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+name: Lint
+on: [push]
+jobs:
+  eslint_check:
+    name: ESlint
+    runs-on: ubuntu-latest
+    steps:
+      - name: ESlint
+        uses: getsentry/action-eslint-fix@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
