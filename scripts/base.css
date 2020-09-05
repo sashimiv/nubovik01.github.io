@@ -116,7 +116,7 @@ input.BlockSearchInput {
   padding: 0;
   border: 0;
   background: none;
-  font-size: 12.5px;
+  font-size: 13px;
   font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai", sans-serif;
   line-height: 15px;
   outline: none;
@@ -446,7 +446,7 @@ input.BlockSearchInput {
   border-radius: 4px;
   border: 1px solid var(--steel_gray_140);
   box-shadow: 0 1px 3px var(--black_alpha12);
-  font-size: 12.5px;
+  font-size: 13px;
   font-family: -apple-system, BlinkMacSystemFont, Roboto, Open Sans, Helvetica Neue, "Noto Sans Armenian", "Noto Sans Bengali", "Noto Sans Cherokee", "Noto Sans Devanagari", "Noto Sans Ethiopic", "Noto Sans Georgian", "Noto Sans Hebrew", "Noto Sans Kannada", "Noto Sans Khmer", "Noto Sans Lao", "Noto Sans Osmanya", "Noto Sans Tamil", "Noto Sans Telugu", "Noto Sans Thai", sans-serif;
   line-height: 15px;
   -ms-flex: 0 0 auto;
@@ -531,7 +531,7 @@ input.BlockSearchInput {
 .Dropdown--r .Dropdown__in:after {
   border-right-color: var(--white);
   margin-top: -4px;
-  transform: translate3d(0.5px, 0, 0)
+  transform: translate3d(1px, 0, 0)
 }
 
 .Dropdown--b {
@@ -550,7 +550,7 @@ input.BlockSearchInput {
 
 .Dropdown--b .Dropdown__in:after {
   border-bottom-color: var(--white);
-  transform: translate3d(0, 0.5px, 0)
+  transform: translate3d(0, 1px, 0)
 }
 
 .Dropdown--l {
@@ -1126,15 +1126,15 @@ textarea.EditableLabel__textarea {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .MembersGrid__i:nth-child(2) {
-    transform: translate3d(.5px, 0, 0)
+    transform: translate3d(1px, 0, 0)
   }
 
   .MembersGrid--4 .MembersGrid__i:nth-child(3) {
-    transform: translate3d(0, .5px, 0)
+    transform: translate3d(0, 1px, 0)
   }
 
   .MembersGrid--3 .MembersGrid__i:nth-child(3), .MembersGrid--4 .MembersGrid__i:nth-child(4) {
-    transform: translate3d(.5px, .5px, 0)
+    transform: translate3d(1px, 1px, 0)
   }
 }
 
@@ -1220,7 +1220,7 @@ textarea.EditableLabel__textarea {
   background: var(--light_blue_100);
   color: var(--steel_gray_A540);
   white-space: nowrap;
-  font-size: 12.5px;
+  font-size: 13px;
   line-height: 14px
 }
 
@@ -1267,7 +1267,7 @@ textarea.EditableLabel__textarea {
   box-sizing: border-box;
   padding: 3px 5px 7px 5px;
   color: var(--gray_400);
-  font-size: 12.5px
+  font-size: 13px
 }
 
 .Pagination__link--selected, .Pagination__link:hover {
@@ -1351,7 +1351,7 @@ textarea.EditableLabel__textarea {
 .Progress--size-l .Progress__item {
   width: 7px;
   height: 7px;
-  margin: 0 1.5px
+  margin: 0 2px
 }
 
 .Progress--size-xl {
@@ -2068,7 +2068,7 @@ textarea.EditableLabel__textarea {
   color: var(--white);
   background: var(--black_alpha72);
   border-radius: 4px;
-  font-size: 12.5px;
+  font-size: 13px;
   line-height: 17px;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -2817,7 +2817,7 @@ textarea.EditableLabel__textarea {
   height: 15px;
   padding-left: 9px;
   color: var(--light_blue_700);
-  font-size: 12.5px;
+  font-size: 13px;
   font-weight: 700;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased
@@ -2989,7 +2989,7 @@ textarea.EditableLabel__textarea {
 
 .InputStub {
   box-sizing: border-box;
-  padding: 4.5px 10px;
+  padding: 5px 10px;
   border-radius: 3px;
   border: solid 1px var(--steel_gray_120);
   background: var(--steel_gray_40);

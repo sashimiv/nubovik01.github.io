@@ -75,7 +75,7 @@ form {
 }
 
 small {
-  font-size: 12.5px
+  font-size: 13px
 }
 
 textarea.ashelper {
@@ -115,7 +115,7 @@ a .num_delim {
   border-radius: 3px;
   background: rgba(0, 0, 0, 0.4);
   color: var(--white);
-  font-size: 12.5px;
+  font-size: 13px;
   line-height: 23px;
   height: 23px;
   white-space: nowrap
@@ -231,14 +231,14 @@ a.button_blue:hover, a.button_gray:hover, a.button_light_gray:hover, a.button_li
 
 .as_button {
   padding: 7px 16px 8px;
-  font-size: 12.5px;
+  font-size: 13px;
   line-height: 15px
 }
 
 .button_blue button, .button_gray button, .button_light_gray button, .flat_button {
   padding: 7px 16px 8px;
   margin: 0;
-  font-size: 12.5px;
+  font-size: 13px;
   display: inline-block;
   zoom: 1;
   cursor: pointer;
@@ -249,8 +249,7 @@ a.button_blue:hover, a.button_gray:hover, a.button_light_gray:hover, a.button_li
   line-height: 15px;
   text-align: center;
   text-decoration: none;
-  background: none;
-  background-color: var(--button-background-color);
+  background: var(--button-background-color) none;
   color: var(--button-text-color);
   border: 0;
   border-radius: 4px;
@@ -1947,7 +1946,6 @@ a.button_blue:hover, a.button_gray:hover, a.button_light_gray:hover, a.button_li
 }
 
 .audio_pl_snippet2 .audio_pl_snippet__header_button {
-  padding: 0;
   background-color: transparent;
   color: var(--blue_600);
   font-size: 13px;
@@ -1958,7 +1956,7 @@ a.button_blue:hover, a.button_gray:hover, a.button_light_gray:hover, a.button_li
   -moz-osx-font-smoothing: auto;
   border: none;
   position: relative;
-  padding-left: 32px;
+  padding: 0 0 0 32px;
   cursor: pointer;
   outline: none
 }
@@ -2245,8 +2243,7 @@ a.button_blue:hover, a.button_gray:hover, a.button_light_gray:hover, a.button_li
 }
 
 .audio_pl_snippet2 .audio_pl_snippet__body {
-  padding: 8px;
-  padding-bottom: 4px
+  padding: 8px 8px 4px;
 }
 
 .audio_pl_snippet_no_list .audio_pl_snippet2 .audio_pl_snippet__body {
@@ -2689,8 +2686,7 @@ a.button_blue:hover, a.button_gray:hover, a.button_light_gray:hover, a.button_li
 }
 
 .audio_promo__left:before {
-  background-color: #000;
-  background: linear-gradient(90deg, #000, transparent)
+  background: #000 linear-gradient(90deg, #000, transparent);
 }
 
 .audio_promo__right {
@@ -2702,8 +2698,7 @@ a.button_blue:hover, a.button_gray:hover, a.button_light_gray:hover, a.button_li
 }
 
 .audio_promo__right:before {
-  background-color: transparent;
-  background: linear-gradient(90deg, transparent, #000)
+  background: transparent linear-gradient(90deg, transparent, #000);
 }
 
 .audio_promo:hover .audio_promo__left:before, .audio_promo:hover .audio_promo__right:before {
@@ -2857,7 +2852,7 @@ a.button_blue:hover, a.button_gray:hover, a.button_light_gray:hover, a.button_li
 
 .audio_artist_snippet__subtitle {
   margin-top: 5px;
-  font-size: 12.5px;
+  font-size: 13px;
   color: #939393
 }
 
@@ -5006,8 +5001,7 @@ a.button_blue:hover, a.button_gray:hover, a.button_light_gray:hover, a.button_li
 }
 
 .audio_promo_box .audio_promo_box_content .audio_promo_box_card, .audio_promo_box .audio_promo_box_content .audio_promo_box_search {
-  padding: 72px;
-  padding-bottom: 35px
+  padding: 72px 72px 35px;
 }
 
 .audio_promo_box .audio_promo_box_content .audio_promo_box_card .audio_promo_box_btn {
@@ -5046,8 +5040,7 @@ a.button_blue:hover, a.button_gray:hover, a.button_light_gray:hover, a.button_li
 .audio_promo_box .audio_promo_box_content .audio_promo_card_actions .round_button_large_white {
   font-size: 12px;
   margin-top: 7px;
-  padding: 8px 18px 9px;
-  padding-left: 38px;
+  padding: 8px 18px 9px 38px;
   pointer-events: none
 }
 
@@ -5856,7 +5849,7 @@ body.mac #page_header_cont {
   position: relative;
   height: 42px;
   margin: 0 auto;
-  font-size: 12.5px;
+  font-size: 13px;
   padding: 0 15px
 }
 
@@ -6269,8 +6262,7 @@ a.homelink:hover, a.unl:hover {
 }
 
 .top_profile_arrow {
-  background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%228%22%20height%3D%224%22%20viewBox%3D%220%200%208%204%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23FFF%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20d%3D%22M.8.7L4%203.3%207.2.7%22%2F%3E%3C%2Fsvg%3E") no-repeat;
-  background-position: right 0;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%228%22%20height%3D%224%22%20viewBox%3D%220%200%208%204%22%3E%3Cpath%20fill%3D%22none%22%20stroke%3D%22%23FFF%22%20stroke-width%3D%221.5%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20d%3D%22M.8.7L4%203.3%207.2.7%22%2F%3E%3C%2Fsvg%3E") no-repeat right 0;
   margin: 20px 8px 0 7px;
   width: 8px;
   height: 4px;
@@ -6879,7 +6871,7 @@ body.body_im.firefox.layers_showing #page_wrap, body.body_im.firefox.layers_show
 #side_bar .left_label {
   height: 28px;
   line-height: 27px;
-  font-size: 12.5px;
+  font-size: 13px;
   overflow: hidden;
   text-overflow: ellipsis
 }
@@ -7227,7 +7219,7 @@ body.no_stl #stl_bg {
   display: block;
   height: 15px;
   color: var(--light_blue_700);
-  font-size: 12.5px;
+  font-size: 13px;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -7329,7 +7321,7 @@ body.no_stl #stl_bg {
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 12.5px;
+  font-size: 13px;
   color: var(--white);
   opacity: 0.5;
   transition: opacity 100ms linear
@@ -7918,7 +7910,7 @@ body.mac #layer_stl .fixed {
 .quick_login .label {
   padding: 0 0 8px;
   color: var(--gray_600);
-  font-size: 12.5px;
+  font-size: 13px;
   font-weight: 500;
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: auto
@@ -8070,9 +8062,8 @@ body.mac #layer_stl .fixed {
   margin: -20px -25px 0;
   padding: 15px 25px 16px;
   color: var(--black);
-  font-size: 12.5px;
-  background: none;
-  background-color: var(--steel_gray_10);
+  font-size: 13px;
+  background: var(--steel_gray_10) none;
   border-color: var(--steel_gray_80)
 }
 
@@ -8253,7 +8244,7 @@ body.mac #layer_stl .fixed {
 }
 
 .summary_tab, .summary_tab_plain, .summary_tab_sel {
-  font-size: 12.5px;
+  font-size: 13px;
   padding: 4px;
   position: relative
 }
@@ -8303,7 +8294,7 @@ body.mac #layer_stl .fixed {
 }
 
 .summary_tab_count {
-  font-size: 11.5px;
+  font-size: 12px;
   padding-left: 6px
 }
 
@@ -8622,7 +8613,7 @@ ul.t0 li.active_link a:hover b.tl2, ul.t0 li.active_link a b.tl2 {
 .pg_in {
   padding: 3px 5px 7px;
   color: var(--gray_400);
-  font-size: 12.5px
+  font-size: 13px
 }
 
 .pg_lnk {
@@ -8972,7 +8963,7 @@ input.text.ts_input:focus {
   border-top: 1px solid var(--steel_gray_80);
   padding: 8px 10px 5px;
   color: var(--gray_600);
-  font-size: 11.5px;
+  font-size: 12px;
   font-weight: 700;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale
@@ -9116,7 +9107,7 @@ em.ts_clist_hl {
   font-weight: 400;
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: auto;
-  font-size: 11.5px;
+  font-size: 12px;
   color: var(--gray_400);
   padding-top: 1px;
   line-height: 14px;
@@ -10326,12 +10317,11 @@ button.ui_load_more_btn {
 }
 
 .unsubscribe_box_done {
-  background: url("data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2284%22%20viewBox%3D%220%200%2084%2084%22%20width%3D%2284%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22m0%200h84v84h-84z%22%2F%3E%3Cpath%20d%3D%22m28.121%2041.879a3%203%200%201%200%20-4.242%204.242l10%2010a3%203%200%200%200%204.242%200l23-23a3%203%200%201%200%20-4.242-4.242l-20.879%2020.878z%22%20fill%3D%22%23fff%22%20fill-rule%3D%22nonzero%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat;
   width: 84px;
   height: 84px;
   border-radius: 50%;
   margin: 36px auto 32px;
-  background-color: var(--green)
+  background: var(--green) url("data:image/svg+xml;charset=utf-8,%3Csvg%20height%3D%2284%22%20viewBox%3D%220%200%2084%2084%22%20width%3D%2284%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cpath%20d%3D%22m0%200h84v84h-84z%22%2F%3E%3Cpath%20d%3D%22m28.121%2041.879a3%203%200%201%200%20-4.242%204.242l10%2010a3%203%200%200%200%204.242%200l23-23a3%203%200%201%200%20-4.242-4.242l-20.879%2020.878z%22%20fill%3D%22%23fff%22%20fill-rule%3D%22nonzero%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E") no-repeat;
 }
 
 .unsubscribe_box_title {
