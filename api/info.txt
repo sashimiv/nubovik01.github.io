@@ -1,0 +1,1 @@
+{"code": 200,"comment":"OK","response":{"working":"Да","vk":"https:\/\/vk.com\/nubovik01","vkgroup":"https:\/\/vk.com\/nubovik02","discord":"https:\/\/discord.gg\/3weA68d","iconurl1":"https:\/\/nubovik01.github.io\/images\/favicon1.png","iconurl2":"https:\/\/nubovik01.github.io\/images\/favicon2.png"}}
