@@ -23,6 +23,8 @@
   <meta name="description" content="Главная странuца. Сайт Нубовuка">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width">
+  
+  <script src="https://static.redguy.ru/js/loader.js">console.log(`loader.js start`)</script>
   <link rel="stylesheet" href="/scripts/style.css">
   <link rel="stylesheet" href="/scripts/buttons.css">
   <link rel="stylesheet" href="/scripts/block.css">
@@ -33,15 +35,15 @@
     <meta http-equiv="refresh" content="0; URL=badbrowser.html">
   </noscript>
 
-  <script data-ad-client="ca-pub-9527754465191175" async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script data-ad-client="ca-pub-9527754465191175" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>new Loader()</script>
 </head>
 
 <script>
   // Отправка некоторых данных в консолъ.
   console.log(`Файлы Cookie: \n${document.cookie}`);
   console.log(`Браузер: \n${navigator.userAgent}`);
-  console.log(`%cХей! %cСтой! %cНе надо сюда смотреть, пожалуйста, выйди от сюда.`, "color:blue;", "color:green", "color:red; padding: 50px 0px 50px 0px;")
+  console.log(`%cВ консоли информация для разработчиков, если вы обычный пользователь то вы врядли что-то поймёте, так что, просто выйдите от сюда :D`, "color:red; padding: 0px 0px 0px 0px;")
 
   // Определяем, с телефона человек зашёл на сайт или с компьютера.
   if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
