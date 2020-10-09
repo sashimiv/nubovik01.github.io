@@ -6,325 +6,336 @@
 <head>
     <script src="https://static.redguy.ru/js/loader.js"></script>
     <script async>new Loader()</script>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Сайт Нубовика - Главная страница.</title>
-  <script type="text/javascript">
-    let msg = document.title;
-    const speed = 370;
-    const endChar = " ";
-    let pos = 0;
-    function moveTitle() {
-      let ml = msg.length;
-        document.title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
-      pos++;
-      if (pos > ml) pos = 0;
-      window.setTimeout("moveTitle()", speed);
-    }
-    moveTitle();
-  </script>
-  <meta name="description" content="Главная странuца. Сайт Нубовuка">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Сайт Нубовика - Главная страница.</title>
+    <script type="text/javascript">
+        let msg = document.title;
+        const speed = 370;
+        const endChar = " ";
+        let pos = 0;
 
-  <link rel="stylesheet" href="/scripts/style.css">
-  <link rel="stylesheet" href="/scripts/buttons.css">
-  <link rel="stylesheet" href="/scripts/block.css">
-  <link rel="stylesheet" href="/scripts/alerts.css">
-  <link rel="stylesheet" href="/scripts/darkteme.css">
+        function moveTitle() {
+            let ml = msg.length;
+            document.title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
+            pos++;
+            if (pos > ml) pos = 0;
+            window.setTimeout("moveTitle()", speed);
+        }
 
-  <noscript>
-    <meta http-equiv="refresh" content="0; URL=badbrowser.html">
-  </noscript>
+        moveTitle();
+    </script>
+    <meta name="description" content="Главная странuца. Сайт Нубовuка">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
 
-  <script data-ad-client="ca-pub-9527754465191175" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link rel="stylesheet" href="/scripts/style.css">
+    <link rel="stylesheet" href="/scripts/buttons.css">
+    <link rel="stylesheet" href="/scripts/block.css">
+    <link rel="stylesheet" href="/scripts/alerts.css">
+    <link rel="stylesheet" href="/scripts/darkteme.css">
+
+    <noscript>
+        <meta http-equiv="refresh" content="0; URL=badbrowser.html">
+    </noscript>
+
+    <script data-ad-client="ca-pub-9527754465191175" async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <script>
+        // Отправка некоторых данных в консолъ.
+        console.log(`Файлы Cookie: \n${document.cookie}`);
+        console.log(`Браузер: \n${navigator.userAgent}`);
+        console.log(`%cВ консоли информация для разработчиков, если вы обычный пользователь то вы врядли что-то поймёте, так что, просто выйдите от сюда :D`, "color:red; padding: 0px 0px 0px 0px;")
+
+        // Определяем, с телефона человек зашёл на сайт или с компьютера.
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            console.log(`Пользователь с телефона`)
+            window.location.href = '/m/index.html';
+
+        } else {
+            console.log(`Пользователь с компьютера`)
+        }
+
+        // Динамическое, наверное, изменение favicon сайта.
+        const partName = "./images/favicon";
+        const extensionFile = ".png";
+        const quantityFiles = 2;
+        let link = document.createElement("LINK");
+        let head = document.getElementsByTagName("HEAD")[0];
+
+        link.setAttribute("rel", "shortcut icon");
+        link.setAttribute("href", getFavicon());
+        if (head.childNodes.length) {
+            head.insertBefore(link, head.childNodes[0]);
+        } else {
+            head.appendChild(link);
+        }
+
+        function getFavicon() {
+            let num = Math.ceil(Math.random() * quantityFiles);
+
+            return partName + num + extensionFile;
+        }
+
+        /* AAB - Функция AntiAdBlock (временно выключена т.к сайт на гитхабе)
+        window.onload = function () {
+        var aab = document.getElementsByClassName( 'adsbygoogle' ); // Если реклама вырезана, то:
+        if ( aab[0] && aab[0].clientHeight == 0 ) {
+          console.log(`Пользователь использует AdBlock`)
+          document.getElementById('offab').innerHTML = `
+          <div class="alertRed">
+          <center>Наш сайт работает <b>только</b> за счёт рекламы! Пожалуйста <b>выключите</b> свой <b>AdBlock</b></center>
+          </div>
+          `
+          document.getElementsByClassName( "header" )[0].remove();
+          document.getElementsByClassName( "adText" )[0].remove();
+          console.log(`Удалено: \n1) Меню\n2) Маленъкая надписъ "Реклама"`)
+          }
+        }
+        */
+
+        // Bad browser
+        const ver = navigator.appVersion;
+        if (ver.indexOf("MSIE") !== -1) {
+            console.log("Пользователь зашёл с IE");
+            window.location.href = "/badbrowser.html";
+        } else
+            console.log("Пользователь зашёл с другого браузера.");
+
+
+        // Дата
+        function getDate() {
+            let date = new Date();
+            let month = date.getMonth();
+            let day = date.getDate();
+            let year = date.getFullYear();
+
+            document.getElementById('dateDisplay').innerHTML = day + '.' + month + '.' + year;
+        }
+
+        setInterval(getDate, 1000);
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t);
+            a = e.getElementsByTagName(t)[0];
+            k.async = true;
+            k.src = r;
+            a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+        ym(65547946, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true,
+            trackHash: true
+        });
+    </script>
+
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/65547946" style="position: absolute; left: -9999px;" alt=""/></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- VK Widget -->
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+    <script
+            type="text/javascript"> VK.Widgets.CommunityMessages("vk_community_messages", 191048799, {
+        expandTimeout: "10000",
+        tooltipButtonText: "Вы нашли ошибку или у вас есть вопрос?"
+    });</script>
+    <!-- /VK Widget -->
 </head>
-
-<script>
-  // Отправка некоторых данных в консолъ.
-  console.log(`Файлы Cookie: \n${document.cookie}`);
-  console.log(`Браузер: \n${navigator.userAgent}`);
-  console.log(`%cВ консоли информация для разработчиков, если вы обычный пользователь то вы врядли что-то поймёте, так что, просто выйдите от сюда :D`, "color:red; padding: 0px 0px 0px 0px;")
-
-  // Определяем, с телефона человек зашёл на сайт или с компьютера.
-  if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    console.log(`Пользователь с телефона`)
-    window.location.href = '/m/index.html';
-
-  } else {
-    console.log(`Пользователь с компьютера`)
-  }
-
-  // Динамическое, наверное, изменение favicon сайта.
-  const partName = "./images/favicon";
-  const extensionFile = ".png";
-  const quantityFiles = 2;
-  let link = document.createElement("LINK");
-  let head = document.getElementsByTagName("HEAD")[0];
-
-  link.setAttribute("rel", "shortcut icon");
-  link.setAttribute("href", getFavicon());
-  if (head.childNodes.length) {
-    head.insertBefore(link, head.childNodes[0]);
-  } else {
-    head.appendChild(link);
-  }
-
-  function getFavicon() {
-    let num = Math.ceil(Math.random() * quantityFiles);
-
-    return partName + num + extensionFile;
-  }
-
-  /* AAB - Функция AntiAdBlock (временно выключена т.к сайт на гитхабе)
-  window.onload = function () {
-  var aab = document.getElementsByClassName( 'adsbygoogle' ); // Если реклама вырезана, то:
-  if ( aab[0] && aab[0].clientHeight == 0 ) {
-    console.log(`Пользователь использует AdBlock`)
-    document.getElementById('offab').innerHTML = `
-    <div class="alertRed">
-    <center>Наш сайт работает <b>только</b> за счёт рекламы! Пожалуйста <b>выключите</b> свой <b>AdBlock</b></center>
-    </div>
-    `
-    document.getElementsByClassName( "header" )[0].remove();
-    document.getElementsByClassName( "adText" )[0].remove();
-    console.log(`Удалено: \n1) Меню\n2) Маленъкая надписъ "Реклама"`)
-    }
-  }
-  */
-
-  // Bad browser
-  const ver = navigator.appVersion;
-  if (ver.indexOf("MSIE") !== -1) {
-    console.log("Пользователь зашёл с IE");
-    window.location.href = "/badbrowser.html";
-  } else
-    console.log("Пользователь зашёл с другого браузера.");
-
-
-  // Дата
-  function getDate() {
-    let date = new Date();
-    let month = date.getMonth();
-    let day = date.getDate();
-    let year = date.getFullYear();
-
-    document.getElementById('dateDisplay').innerHTML = day + '.' + month + '.' + year;
-  }
-
-  setInterval(getDate, 1000);
-</script>
-
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-  (function (m, e, t, r, i, k, a) {
-    m[i] = m[i] || function () {
-      (m[i].a = m[i].a || []).push(arguments)
-    };
-    m[i].l = 1 * new Date();
-    k = e.createElement(t);
-    a = e.getElementsByTagName(t)[0];
-    k.async = true;
-    k.src = r;
-    a.parentNode.insertBefore(k, a)
-  })
-    (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
-
-  ym(65547946, "init", {
-    clickmap: true,
-    trackLinks: true,
-    accurateTrackBounce: true,
-    webvisor: true,
-    trackHash: true
-  });
-</script>
-
-<noscript>
-  <div><img src="https://mc.yandex.ru/watch/65547946" style="position:absolute; left:-9999px;" alt="" /></div>
-</noscript>
-<!-- /Yandex.Metrika counter -->
-
-<!-- VK Widget -->
-<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
-<script
-  type="text/javascript"> VK.Widgets.CommunityMessages("vk_community_messages", 191048799, { expandTimeout: "10000", tooltipButtonText: "Вы нашли ошибку или у вас есть вопрос?" });</script>
-<div id="vk_community_messages"></div>
-<!-- /VK Widget -->
-
-<!--  Alerts  -->
-<div style="font-size: large" id="offab"></div>
-
-<div class="alertBlue">
-  <span class="closeBtn" onclick="this.parentElement.style.display='none';">×</span>
-  <img src="./images/cookie.gif" width="16" height="16" alt="печенька" /> На сайте используются файлы Cookies, это
-  позволяет нам делать его лучше. Продолжая пользоваться сайтом, вы соглашаетесь с использованием файлов cookie.
-</div>
-<!-- /Alerts -->
-
 <body>
-  <main class="main-element">
+<div id="vk_community_messages"></div>
+<div style="font-size: large;" id="offab"></div>
+<div class="alertBlue">
+    <span class="closeBtn" onclick="this.parentElement.style.display='none';">×</span>
+    <img src="./images/cookie.gif" width="16" height="16" alt="печенька"/> На сайте используются файлы Cookies, это
+    позволяет нам делать его лучше. Продолжая пользоваться сайтом, вы соглашаетесь с использованием файлов cookie.
+</div>
+<main class="main-element">
     <div><br>
-      <h1 class="center"><img src="https://crafatar.com/avatars/02d7ebafa2304027a4289226ece1843a?size=480&overlay"
-          width="25" height="25" alt="аватарка"> CАЙТ НУБОВИКА</h1>
-      <br><br>
+        <h1 class="center"><img src="https://crafatar.com/avatars/02d7ebafa2304027a4289226ece1843a?size=480&overlay"
+                                width="25" height="25" alt="аватарка"> САЙТ НУБОВИКА</h1>
+        <br><br>
 
-      <!-- Блоки -->
-      <div class="left_otstup">
-        <div class="block center">
-          <p class="center"><b>Дискорд-сервер</b></p>
-          <iframe src="https://discord.com/widget?id=457858774099689479&theme=dark" width="300" height="430"
-            allowtransparency="true" style="border: none"></iframe>
-        </div><br>
-        
-        <div class="block center">
-          <p class="center"><b>Группа в ВКонтакте</b></p>
-<script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
-
-<!-- VK Widget -->
-<div id="vk_groups"></div>
-<script type="text/javascript">
-VK.Widgets.Group("vk_groups", {mode: 3, width: "295", color3: 'FD7425'}, 191048799);
-</script>
-        </div><br>
-
-        <div class="block center">
-          <p class="center"><b>COVID-19</b></p>
-          <div>
-            <iframe src="https://yandex.ru/covid19/stat/widget/light/?geoId=10000" width=200 height=170
-              style="border: none;"></iframe>
-          </div>
-        </div>
-      </div>
-
-      <div class="top_otstup">
-        <div class="block_head"></div>
-        <div class="adblock cherryBlock center">
-          <details open>
-            <summary class="center"><b>Реклама</b></summary>
-            <img src="/images/forAD.png" alt="что">
-            <small style="color: #8a8589">СКОРО</small>
-          </details>
-        </div><br>
-
-        <div class="block center">
-          <p class="center"><b>Тёмная тема</b></p>
-          <nav>
-            <div class="theme-switch-wrapper">
-              <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-              </label>
+        <!-- Блоки -->
+        <div class="left_otstup">
+            <div class="block center">
+                <p class="center"><b>Дискорд-сервер</b></p>
+                <iframe src="https://discord.com/widget?id=457858774099689479&theme=dark" width="300" height="430"
+                        allowtransparency="true" style="border: none;"></iframe>
             </div>
-          </nav>
+            <br>
 
-          <script>
-            const toggleSwitch = document.querySelector(
-              '.theme-switch input[type="checkbox"]'
-            );
-            const currentTheme = localStorage.getItem("theme");
-            const mainElement = document.querySelector(".main-element");
+            <div class="block center">
+                <p class="center"><b>Группа в ВКонтакте</b></p>
+                <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
 
-            if (currentTheme) {
-              mainElement.setAttribute("data-theme", currentTheme);
+                <!-- VK Widget -->
+                <div id="vk_groups"></div>
+                <script type="text/javascript">
+                    VK.Widgets.Group("vk_groups", {mode: 3, width: "295", color3: 'FD7425'}, 191048799);
+                </script>
+            </div>
+            <br>
 
-              if (currentTheme === "dark") {
-                toggleSwitch.checked = true;
-              }
-            }
-
-            function switchTheme(e) {
-              if (e.target.checked) {
-                mainElement.setAttribute("data-theme", "dark");
-                localStorage.setItem("theme", "dark");
-              } else {
-                mainElement.setAttribute("data-theme", "light");
-                localStorage.setItem("theme", "light");
-              }
-            }
-
-            toggleSwitch.addEventListener("change", switchTheme, false);
-          </script>
-        </div><br>
-
-        <div class="block center">
-          <div class="source">
-            <div id="time-node2">00:00</div>
-            <div class="source" id="dateDisplay">01.01.1970</div><br>
-            <small style="color: #8a8589">Данная функция находится в beta-тестирование, обо всех багах или ошибках
-              сообщайте в нашу группу во ВКонтакте</small>
-          </div>
-          <script src="/scripts/time.js"></script>
+            <div class="block center">
+                <p class="center"><b>COVID-19</b></p>
+                <div>
+                    <iframe src="https://yandex.ru/covid19/stat/widget/light/?geoId=10000" width=200 height=170
+                            style="border: none;"></iframe>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="right_otstup">
-        <div class="block center">
-          <p class="center"><b>Музыка</b></p>
-          <audio controls>
-            <source src="http://ep128server.streamr.ru:8033/eptop128" type="audio/ogg; codecs=vorbis">
-            <source src="http://ep128server.streamr.ru:8033/eptop128" type="audio/mpeg">
-          </audio>
+        <div class="top_otstup">
+            <div class="block_head"></div>
+            <div class="adblock cherryBlock center">
+                <details open>
+                    <summary class="center"><b>Реклама</b></summary>
+                    <img src="/images/forAD.png" alt="что">
+                    <small style="color: #8a8589;">СКОРО</small>
+                </details>
+            </div>
+            <br>
 
-          <details open>
-          <summary class="center"><b>Песня месяца</b></summary>
-          <small style="color: #8a8589">По мнению пользователей</small>
-            <audio controls>
-              <source src="" type="audio/ogg; codecs=vorbis">
-              <source src="" type="audio/mpeg">
-            </audio>
-          </details>
-          
-          <details open>
-            <summary class="center"><b>Больше музыки</b></summary>
-            <audio controls>
-              <source src="http://radio-srv1.11one.ru/record192k.mp3" type="audio/ogg; codecs=vorbis">
-              <source src="http://radio-srv1.11one.ru/record192k.mp3" type="audio/mpeg">
-            </audio>
-            
-            <audio controls>
-              <source src="http://air.radiorecord.ru:8102/rus_320" type="audio/ogg; codecs=vorbis">
-              <source src="http://air.radiorecord.ru:8102/rus_320" type="audio/mpeg">
-            </audio>
+            <div class="block center">
+                <p class="center"><b>Тёмная тема</b></p>
+                <nav>
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox"/>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </nav>
 
-            <audio controls>
-              <source src="http://air.radiorecord.ru:8102/sd90_320" type="audio/ogg; codecs=vorbis">
-              <source src="http://air.radiorecord.ru:8102/sd90_320" type="audio/mpeg">
-            </audio>
+                <script>
+                    const toggleSwitch = document.querySelector(
+                        '.theme-switch input[type="checkbox"]'
+                    );
+                    const currentTheme = localStorage.getItem("theme");
+                    const mainElement = document.querySelector(".main-element");
 
-            <audio controls>
-              <source src="http://sv.wargaming.fm:8051/128" type="audio/ogg; codecs=vorbis">
-              <source src="http://sv.wargaming.fm:8051/128" type="audio/mpeg">
-            </audio>
+                    if (currentTheme) {
+                        mainElement.setAttribute("data-theme", currentTheme);
 
-            <audio controls>
-              <source src="http://air.radiorecord.ru:8102/trap_320" type="audio/ogg; codecs=vorbis">
-              <source src="http://air.radiorecord.ru:8102/trap_320" type="audio/mpeg">
-            </audio>
+                        if (currentTheme === "dark") {
+                            toggleSwitch.checked = true;
+                        }
+                    }
 
-            <audio controls>
-              <source src="http://air.radiorecord.ru:8102/yo_320" type="audio/ogg; codecs=vorbis">
-              <source src="http://air.radiorecord.ru:8102/yo_320" type="audio/mpeg">
-            </audio>
-          </details>
+                    function switchTheme(e) {
+                        if (e.target.checked) {
+                            mainElement.setAttribute("data-theme", "dark");
+                            localStorage.setItem("theme", "dark");
+                        } else {
+                            mainElement.setAttribute("data-theme", "light");
+                            localStorage.setItem("theme", "light");
+                        }
+                    }
 
-          <img src="https://metrika-informer.com/informer/65547946/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
-            style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Данные за сегодня"
-            class="ym-advanced-informer" data-cid="65547946" data-lang="ru" />
-        </div><br>
+                    toggleSwitch.addEventListener("change", switchTheme, false);
+                </script>
+            </div>
+            <br>
 
-        <div class="block center">
-          <p class="center"><b>Комментарии</b></p>
-          <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
-          <script type="text/javascript"> VK.init({ apiId: 7543607, onlyWidgets: true });</script>
-          <div id="vk_comments">
-            <script
-              type="text/javascript">VK.Widgets.Comments("vk_comments", { limit: 1, width: "50", attach: "*" }); </script>
-          </div>
-        </div><br>
-      </div>
+            <div class="block center">
+                <div class="source">
+                    <div id="time-node2">00:00</div>
+                    <div class="source" id="dateDisplay">01.01.1970</div>
+                    <br>
+                    <small style="color: #8a8589;">Данная функция находится в beta-тестирование, обо всех багах или
+                        ошибках
+                        сообщайте в нашу группу во ВКонтакте</small>
+                </div>
+                <script src="/scripts/time.js"></script>
+            </div>
+        </div>
+
+        <div class="right_otstup">
+            <div class="block center">
+                <p class="center"><b>Музыка</b></p>
+                <audio controls>
+                    <source src="http://ep128server.streamr.ru:8033/eptop128" type="audio/ogg; codecs=vorbis">
+                    <source src="http://ep128server.streamr.ru:8033/eptop128" type="audio/mpeg">
+                </audio>
+
+                <details open>
+                    <summary class="center"><b>Песня месяца</b></summary>
+                    <small style="color: #8a8589;">По мнению пользователей</small>
+                    <audio controls>
+                        <source src="" type="audio/ogg; codecs=vorbis">
+                        <source src="" type="audio/mpeg">
+                    </audio>
+                </details>
+
+                <details open>
+                    <summary class="center"><b>Больше музыки</b></summary>
+                    <audio controls>
+                        <source src="http://radio-srv1.11one.ru/record192k.mp3" type="audio/ogg; codecs=vorbis">
+                        <source src="http://radio-srv1.11one.ru/record192k.mp3" type="audio/mpeg">
+                    </audio>
+
+                    <audio controls>
+                        <source src="http://air.radiorecord.ru:8102/rus_320" type="audio/ogg; codecs=vorbis">
+                        <source src="http://air.radiorecord.ru:8102/rus_320" type="audio/mpeg">
+                    </audio>
+
+                    <audio controls>
+                        <source src="http://air.radiorecord.ru:8102/sd90_320" type="audio/ogg; codecs=vorbis">
+                        <source src="http://air.radiorecord.ru:8102/sd90_320" type="audio/mpeg">
+                    </audio>
+
+                    <audio controls>
+                        <source src="http://sv.wargaming.fm:8051/128" type="audio/ogg; codecs=vorbis">
+                        <source src="http://sv.wargaming.fm:8051/128" type="audio/mpeg">
+                    </audio>
+
+                    <audio controls>
+                        <source src="http://air.radiorecord.ru:8102/trap_320" type="audio/ogg; codecs=vorbis">
+                        <source src="http://air.radiorecord.ru:8102/trap_320" type="audio/mpeg">
+                    </audio>
+
+                    <audio controls>
+                        <source src="http://air.radiorecord.ru:8102/yo_320" type="audio/ogg; codecs=vorbis">
+                        <source src="http://air.radiorecord.ru:8102/yo_320" type="audio/mpeg">
+                    </audio>
+                </details>
+
+                <img src="https://metrika-informer.com/informer/65547946/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+                     style="width: 88px; height: 31px; border: 0;" alt="Яндекс.Метрика" title="Данные за сегодня"
+                     class="ym-advanced-informer" data-cid="65547946" data-lang="ru"/>
+            </div>
+            <br>
+
+            <div class="block center">
+                <p class="center"><b>Комментарии</b></p>
+                <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+                <script type="text/javascript"> VK.init({apiId: 7543607, onlyWidgets: true});</script>
+                <div id="vk_comments">
+                    <script
+                            type="text/javascript">VK.Widgets.Comments("vk_comments", {
+                        limit: 1,
+                        width: "50",
+                        attach: "*"
+                    }); </script>
+                </div>
+            </div>
+            <br>
+        </div>
     </div>
-  </main>
-</body>
-
+</main>
 <script src="/scripts/time.js"></script>
-
+</body>
 </html>
