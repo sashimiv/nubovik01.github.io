@@ -10,7 +10,6 @@
   min-height: 285vh;
   background-color: var(--bg-color);
   color: var(--font-color);
-  font-family: "Oswald", sans-serif;
 }
 
 [data-theme="dark"] {
