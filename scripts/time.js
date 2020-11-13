@@ -5,6 +5,7 @@ function getCurrentTimeString2(dots) {
     return dots ? timeString : timeString.replace(/:/, ' ');
 }
 
-setInterval(function () {
-        timeNode2.innerHTML = getCurrentTimeString2(Math.round(Date.now() / 1000) % 2);
+setInterval(
+    function () {
+    timeNode2.innerHTML = getCurrentTimeString2(Math.round(Date.now() / 1000) % 2);
     },1000);
