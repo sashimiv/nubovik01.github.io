@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- Сайт создан Нубовиком • 2020 год, JSUnresolvedVariable -->
+<!-- Сайт создан Нубовиком, Thanks Ilya#7545 • 2020 год, JSUnresolvedVariable -->
 <!--suppress JSUnresolvedFunction, JSUnresolvedVariable -->
 <html lang="ru">
 
@@ -7,39 +7,26 @@
     <script src="https://static.redguy.ru/js/loader.js"></script>
     <script async>new Loader()</script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Сайт Нубовика - Главная страница.</title>
-    <script type="text/javascript">
-        let msg = document.title;
-        const speed = 370;
-        const endChar = " ";
-        let pos = 0;
-
-        function moveTitle() {
-            let ml = msg.length;
-            document.title = msg.substr(pos, ml) + endChar + msg.substr(0, pos);
-            pos++;
-            if (pos > ml) pos = 0;
-            window.setTimeout("moveTitle()", speed);
-        }
-
-        moveTitle();
-    </script>
+    <title>Сайт Нубовика</title>
     <meta name="description" content="Главная странuца. Сайт Нубовuка">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width">
 
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MRP28DZ');</script>
+    <!-- End Google Tag Manager -->
+    
     <link rel="stylesheet" href="/scripts/style.css">
     <link rel="stylesheet" href="/scripts/buttons.css">
     <link rel="stylesheet" href="/scripts/block.css">
     <link rel="stylesheet" href="/scripts/alerts.css">
     <link rel="stylesheet" href="/scripts/darkteme.css">
 
-    <noscript>
-        <meta http-equiv="refresh" content="0; URL=badbrowser.html">
-    </noscript>
-
-    <script data-ad-client="ca-pub-9527754465191175" async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <noscript><meta http-equiv="refresh" content="0; URL=badbrowser.html"></noscript>
 
     <script>
         // Отправка некоторых данных в консолъ.
@@ -115,7 +102,7 @@
 
         setInterval(getDate, 1000);
     </script>
-
+    
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (m, e, t, r, i, k, a) {
@@ -131,36 +118,31 @@
         })
         (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
 
-        ym(65547946, "init", {
-            clickmap: true,
-            trackLinks: true,
-            accurateTrackBounce: true,
-            webvisor: true,
-            trackHash: true
-        });
+        ym(65547946, "init", {clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true});
     </script>
 
-    <noscript>
-        <div><img src="https://mc.yandex.ru/watch/65547946" style="position: absolute; left: -9999px;" alt=""/></div>
-    </noscript>
+    <noscript><div><img src="https://mc.yandex.ru/watch/65547946" style="position: absolute; left: -9999px;" alt=""/></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
     <!-- VK Widget -->
     <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
-    <script
-            type="text/javascript"> VK.Widgets.CommunityMessages("vk_community_messages", 191048799, {
-        expandTimeout: "10000",
-        tooltipButtonText: "Вы нашли ошибку или у вас есть вопрос?"
-    });</script>
+    <script>type="text/javascript"> VK.Widgets.CommunityMessages("vk_community_messages", 191048799, { expandTimeout: "10000", tooltipButtonText: "Вы нашли ошибку или у вас есть вопрос?"});</script>
     <!-- /VK Widget -->
-</head>
+</head>   
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRP28DZ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+</body>
+    
 <body>
 <div id="vk_community_messages"></div>
 <div style="font-size: large;" id="offab"></div>
 <div class="alertBlue">
     <span class="closeBtn" onclick="this.parentElement.style.display='none';">×</span>
-    <img src="./images/cookie.gif" width="16" height="16" alt="печенька"/> На сайте используются файлы Cookies, это
-    позволяет нам делать его лучше. Продолжая пользоваться сайтом, вы соглашаетесь с использованием файлов cookie.
+    <img src="./images/cookie.gif" width="16" height="16" alt="печенька"/> На сайте используются файлы Cookies, это позволяет нам делать его лучше. Продолжая пользоваться сайтом, вы соглашаетесь с использованием файлов cookie.
 </div>
 <main class="main-element">
     <div><br>
