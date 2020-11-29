@@ -1,4 +1,6 @@
 /* Золотые кнопки, да-да, те самые, которые были когда-то на сайте. */
+
+/* (Выключены)
 a {
   text-decoration: none;
   outline: none;
@@ -31,3 +33,4 @@ a:after {
   width: calc(100% - 10px);
   height: calc(100% + 10px);
 }
+*/
