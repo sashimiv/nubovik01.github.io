@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="https://static.redguy.ru/js/loader.js"></script>
+    <script async>new Loader()</script>
+    <title>Сайт Нубовика</title>
+    <meta name="description" content="Сайт Нубовика new.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <link rel="stylesheet" href="/scripts/index.css">
+
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+    <script
+        type="text/javascript">VK.Widgets.Group("vk_groups", { mode: 3, width: "300", color3: 'FD7425' }, 191048799);</script>
+
+    <noscript>
+        <meta http-equiv="refresh" content="0; URL=/badbrowser.html"></noscript>
+
+    <script>
+        // Отправка некоторых данных в консолъ.
+        console.log(`Браузер: \n${navigator.userAgent}`);
+
+        // Определяем, с телефона человек зашёл на сайт или с компьютера.
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            console.log(`Пользователь с телефона`)
+            window.location.href = '/m/index.html';
+
+        } else {
+            console.log(`Пользователь с компьютера`)
+        }
+
+        // Динамическое, наверное, изменение favicon сайта.
+        const partName = "/images/favicon";
+        const extensionFile = ".png";
+        const quantityFiles = 2;
+        let link = document.createElement("LINK");
+        let head = document.getElementsByTagName("HEAD")[0];
+
+        link.setAttribute("rel", "shortcut icon");
+        link.setAttribute("href", getFavicon());
+        if (head.childNodes.length) {
+            head.insertBefore(link, head.childNodes[0]);
+        } else {
+            head.appendChild(link);
+        }
+
+        function getFavicon() {
+            let num = Math.ceil(Math.random() * quantityFiles);
+
+            return partName + num + extensionFile;
+        }
+
+        // Bad browser
+        const ver = navigator.appVersion;
+        if (ver.indexOf("MSIE") !== -1) {
+            console.log("Пользователь зашёл с IE");
+            window.location.href = "/badbrowser.html";
+        } else
+            console.log("Пользователь зашёл с другого браузера.");
+    </script>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t);
+            a = e.getElementsByTagName(t)[0];
+            k.async = true;
+            k.src = r;
+            a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+        ym(65547946, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true });
+    </script>
+
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/65547946" style="position: absolute; left: -9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+    <div class="contentBody">
+        <div class="upBar">
+            <div class="bar">
+                <a href="https://nubovik01.github.io/">Старый дизайн</a> <b>|</b> <a href="covid19">COVID-19</a> <b>|</b> <img src="/images/cookie.gif" width="16" height="16" alt="печенька"/>
+            </div>
+            <div class="upBar">
+                <center>
+                    <a href="https://nubovik01.github.io/c/discord" class="btn">Дискорд</a>
+                    <a href="https://vk.com/nubovik02" class="btn">Группа ВКонтакте</a>
+                    <a href="./covid19" class="btn">COVID-19</a>
+                    <a href="https://flameout.cf" class="btn">FlameOut</a>
+                </center>
+            </div>
+        </div><br>
+
+        <div class="content">
+            <div class="additional boxhover">
+                <iframe src="https://discord.com/widget?id=457858774099689479&theme=dark" width="300" height="305" allowtransparency="true" class="boxhover" style="border: none;"></iframe>
+                <div id="vk_groups" class="boxhover"></div>
+                <div class="footer">
+                    <center>
+                        By NUBOVIK. Дизайн взят с <a href="https://redguy.ru/">RedGuy</a>
+                    </center>
+                </div>
+            </div>
+
+            <div class="main">
+                <ol>
+                    <div class="alertBlue">
+                        <span class="closeBtn" onclick="this.parentElement.style.display='none';">×</span>
+                        <img src="/images/cookie.gif" width="16" height="16" alt="печенька" /> <small>На сайте используются файлы Cookies, это позволяет нам делать его лучше. Продолжая пользоваться сайтом, вы соглашаетесь с использованием файлов cookie.</small>
+                    </div>
+
+                    [<b>09.12.2020</b>] Новая версия сайта. Реклама приняла ислам из-за дизайна сайта.
+                </ol>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
