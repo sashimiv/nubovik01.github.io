@@ -1,28 +1,42 @@
 <!DOCTYPE HTML>
-<!-- Сайт создан Нубовиком, Thanks Ilya#7545 • 2020 год, JSUnresolvedVariable -->
-<!--suppress JSUnresolvedFunction, JSUnresolvedVariable -->
 <html lang="ru">
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <script src="https://static.redguy.ru/js/loader.js"></script>
     <script async>new Loader()</script>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Сайт Нубовика</title>
-    <meta name="description" content="Сайт Нубовика. ПК-версия.">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width">
-    <meta name="yandex-verification" content="315518e309788393"/>
-    
-    <link rel="stylesheet" href="/scripts/index.css">
-    <link rel="stylesheet" href="/scripts/darkteme.css">
+    <meta name="description" content="Сайт Нубовика. Новый дизайн!">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
-    <noscript><meta http-equiv="refresh" content="0; URL=badbrowser.html"></noscript>
+    <link rel="stylesheet" href="/scripts/index.css">
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
+    <script type="text/javascript">VK.Widgets.Group("vk_groups", { mode: 3, width: "300", color3: 'FD7425' }, 191048799);</script>
+
+    <noscript><meta http-equiv="refresh" content="0; URL=/badbrowser.html"></noscript>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+
+        ym(65547946, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true,
+            trackHash: true
+        });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/65547946" style="position:absolute; left:-9999px;" alt=""/></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 
     <script>
         // Отправка некоторых данных в консолъ.
-        console.log(`Файлы Cookie: \n${document.cookie}`);
         console.log(`Браузер: \n${navigator.userAgent}`);
-        console.log(`%cВ консоли информация для разработчиков, если вы обычный пользователь то вы врядли что-то поймёте, так что, просто выйдите от сюда :D`, "color:red; padding: 0px 0px 0px 0px;")
 
         // Определяем, с телефона человек зашёл на сайт или с компьютера.
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
@@ -34,7 +48,7 @@
         }
 
         // Динамическое, наверное, изменение favicon сайта.
-        const partName = "./images/favicon";
+        const partName = "/images/favicon";
         const extensionFile = ".png";
         const quantityFiles = 2;
         let link = document.createElement("LINK");
@@ -54,23 +68,6 @@
             return partName + num + extensionFile;
         }
 
-        /* AAB - Функция AntiAdBlock (временно выключена т.к сайт на гитхабе)
-        window.onload = function () {
-        var aab = document.getElementsByClassName( 'adsbygoogle' ); // Если реклама вырезана, то:
-        if ( aab[0] && aab[0].clientHeight == 0 ) {
-          console.log(`Пользователь использует AdBlock`)
-          document.getElementById('offab').innerHTML = `
-          <div class="alertRed">
-          <center>Наш сайт работает <b>только</b> за счёт рекламы! Пожалуйста <b>выключите</b> свой <b>AdBlock</b></center>
-          </div>
-          `
-          document.getElementsByClassName( "header" )[0].remove();
-          document.getElementsByClassName( "adText" )[0].remove();
-          console.log(`Удалено: \n1) Меню\n2) Маленъкая надписъ "Реклама"`)
-          }
-        }
-        */
-
         // Bad browser
         const ver = navigator.appVersion;
         if (ver.indexOf("MSIE") !== -1) {
@@ -78,221 +75,63 @@
             window.location.href = "/badbrowser.html";
         } else
             console.log("Пользователь зашёл с другого браузера.");
-
-
-        // Дата
-        function getDate() {
-            let date = new Date();
-            let month = date.getMonth();
-            let day = date.getDate();
-            let year = date.getFullYear();
-
-            document.getElementById('dateDisplay').innerHTML = day + '.' + month + '.' + year;
-        }
-
-        setInterval(getDate, 1000);
     </script>
-    
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function (m, e, t, r, i, k, a) {
-            m[i] = m[i] || function () {
-                (m[i].a = m[i].a || []).push(arguments)
-            };
-            m[i].l = 1 * new Date();
-            k = e.createElement(t);
-            a = e.getElementsByTagName(t)[0];
-            k.async = true;
-            k.src = r;
-            a.parentNode.insertBefore(k, a)
-        })
-        (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym");
+</head>
 
-        ym(65547946, "init", {clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true, trackHash: true});
-    </script>
-
-    <noscript><div><img src="https://mc.yandex.ru/watch/65547946" style="position: absolute; left: -9999px;" alt=""/></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-
-    <!-- VK Widget -->
-    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
-    <script>type="text/javascript"> VK.Widgets.CommunityMessages("vk_community_messages", 191048799, { expandTimeout: "10000", tooltipButtonText: "Вы нашли ошибку или у вас есть вопрос?"});</script>
-    <!-- /VK Widget -->
-</head>   
-    
 <body>
-<div id="vk_community_messages"></div>
-<div style="font-size: large;" id="offab"></div>
-<div class="alertBlue">
-    <span class="closeBtn" onclick="this.parentElement.style.display='none';">×</span>
-    <img src="./images/cookie.gif" width="16" height="16" alt="печенька"/> На сайте используются файлы Cookies, это позволяет нам делать его лучше. Продолжая пользоваться сайтом, вы соглашаетесь с использованием файлов cookie.
-</div>
-    
-<div class="alertBlue">
-    <span class="closeBtn" onclick="this.parentElement.style.display='none';">😡</span>
-    <small><a href="/n" class="btn">Новый дизайн сайта! Нажмите сюда, чтобы перейти.</a></small>
-</div>
-<main class="main-element">
-    <div><br>
-        <h1 class="center"><img src="https://crafatar.com/avatars/02d7ebafa2304027a4289226ece1843a?size=480&overlay" width="25" height="25" alt="аватарка"> САЙТ НУБОВИКА</h1>
-        <br><br>
-
-        <!-- Блоки -->
-        <div class="left_otstup">
-            <div class="block center">
-                <p class="center"><b>Дискорд-сервер</b></p>
-                <iframe src="https://discord.com/widget?id=457858774099689479&theme=dark" width="300" height="430" allowtransparency="true" style="border: none;"></iframe>
+    <div class="contentBody">
+        <div class="upBar">
+            <div class="bar">
+                <a href="https://nubovik01.github.io/">Старый дизайн</a> <b>|</b>
+                <font color="red">NEW!</font> <a href="covid19">COVID-19</a> <b>|</b>
+                <a href="https://ru.wikipedia.org/wiki/Cookie" target="_blank" onclick="alert('На сайте используются файлы Cookies, это позволяет нам делать его лучше. Продолжая пользоваться сайтом, вы соглашаетесь с использованием файлов cookie.'); alert('Cookies («Куки», «Кукисы», в переводе с английского – «Печеньки») – небольшие текстовые файлы, содержащие служебную информацию. Они создаются браузером автоматически при посещении веб-сайта и содержат информацию о нем.'); alert('Прямо сейчас вас перекинет на сайт https:\/\/ru.wikipedia.org\/wiki\/Cookie где вы сможете узнать более подробнее про файлы Cookie.')"><img src="/images/cookie.gif" width="16" height="16" alt="печенька"/></a>
             </div>
-            <br>
 
-            <div class="block center">
-                <p class="center"><b>Группа в ВКонтакте</b></p>
-                <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
-
-                <!-- VK Widget -->
-                <div id="vk_groups"></div>
-                <script type="text/javascript">VK.Widgets.Group("vk_groups", {mode: 3, width: "295", color3: 'FD7425'}, 191048799);</script>
+            <div class="upBar">
+                <center>
+                    <a href="https://nubovik01.github.io/c/discord" class="btn">Дискорд</a>
+                    <a href="https://vk.com/nubovik02" class="btn">Группа ВКонтакте</a>
+                    <a href="./covid19" class="btn">COVID-19</a>
+                    <a href="https://flameout.cf" class="btn">FlameOut</a>
+                </center>
             </div>
-            <br>
+        </div><br>
 
-            <div class="block center">
-                <p class="center"><b>COVID-19</b></p>
-                <div>
-                    <iframe src="https://yandex.ru/covid19/stat/widget/light/?geoId=10000" width=200 height=170 style="border: none;"></iframe>
+        <div class="content">
+            <div class="additional boxhover">
+                <iframe src="https://discord.com/widget?id=457858774099689479&theme=dark" width="300" height="305" allowtransparency="true" class="boxhover" style="border: none;"></iframe>
+                <div id="vk_groups" class="boxhover"></div>
+                <div class="footer">
+                    <center><b>By NUBOVIK. Дизайн взят с <a href="https://redguy.ru/">RedGuy</a></b></center>
                 </div>
             </div>
-        </div>
 
-        <div class="top_otstup">
-            <div class="adblock cherryBlock center">
-                <details open>
-                    <summary class="center"><b>Реклама</b></summary>
-                    <img src="/images/AD.png" width="270" height="349" alt="Реклама">
-                    <small style="color: #8a8589;">СКОРО</small>
-                </details>
-            </div>
-            <br>
-
-            <div class="block center">
-                <p class="center"><b>Тёмная тема</b></p>
-                <nav>
-                    <div class="theme-switch-wrapper">
-                        <label class="theme-switch" for="checkbox">
-                            <input type="checkbox" id="checkbox"/>
-                            <span class="slider round"></span>
-                        </label>
+            <div class="main">
+                <ol>
+                    <div class="alertBlue">
+                        <span class="closeBtn" onclick="this.parentElement.style.display='none';">×</span>
+                        <img src="/images/cookie.gif" width="16" height="16" alt="печенька"/> <small>На сайте используются файлы Cookies, это позволяет нам делать его лучше. Продолжая пользоваться сайтом, вы соглашаетесь с использованием файлов cookie.</small>
                     </div>
-                </nav>
 
-                <script>
-                    const toggleSwitch = document.querySelector(
-                        '.theme-switch input[type="checkbox"]'
-                    );
-                    const currentTheme = localStorage.getItem("theme");
-                    const mainElement = document.querySelector(".main-element");
+                    <center>Новостная газета <font color="blue"><b>プッシーマンモス</b></font>, выпуск <font color="red"><b>№1</b></font> 12 декабря 2020</b></center>
+                    <center><font color="ff8a00"><b>by NUBOVIK</b></font><br></center><hr>
+                    <img class="emoji" src="https://vk.com/emoji/e/f09f9883.png" alt="😃"> Всем привет! У сайта появился домен. <a href="https://nubovik.cf"><font color="green">https://nubovik.cf</font></a><br>
+                    <img class="emoji" src="https://vk.com/emoji/e/e296b6.png" alt="▶"> Добавлена информация про файлы cookie.<br>
+                    <img class="emoji" src="https://vk.com/emoji/e/e296b6.png" alt="▶"> Исправлена ошибка в /covid19
 
-                    if (currentTheme) {
-                        mainElement.setAttribute("data-theme", currentTheme);
-
-                        if (currentTheme === "dark") {
-                            toggleSwitch.checked = true;
-                        }
-                    }
-
-                    function switchTheme(e) {
-                        if (e.target.checked) {
-                            mainElement.setAttribute("data-theme", "dark");
-                            localStorage.setItem("theme", "dark");
-                        } else {
-                            mainElement.setAttribute("data-theme", "light");
-                            localStorage.setItem("theme", "light");
-                        }
-                    }
-
-                    toggleSwitch.addEventListener("change", switchTheme, false);
-                </script>
+                    <br><br>
+                    <!-- Yandex.Metrika informer -->
+                    <a href="https://metrika.yandex.ru/stat/?id=65547946&amp;from=informer" target="_blank"
+                        rel="nofollow"><img
+                            src="https://metrika-informer.com/informer/65547946/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
+                            style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика"
+                            title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"
+                            class="ym-advanced-informer" data-cid="65547946" data-lang="ru" /></a>
+                    <!-- /Yandex.Metrika informer -->
+                </ol>
             </div>
-            <br>
-
-            <div class="block center">
-                <div class="source">
-                    <div id="time-node2">00:00</div>
-                    <div class="source" id="dateDisplay">01.01.1970</div>
-                    <br>
-                    <small style="color: #8a8589;">Данная функция находится в beta-тестирование, обо всех багах или ошибках сообщайте в нашу группу во ВКонтакте</small>
-                </div>
-                <script src="/scripts/time.js"></script>
-            </div>
-        </div>
-
-        <div class="right_otstup">
-            <div class="block center">
-                <p class="center"><b>Музыка</b></p>
-                <audio controls>
-                    <source src="http://ep128server.streamr.ru:8033/eptop128" type="audio/ogg; codecs=vorbis">
-                    <source src="http://ep128server.streamr.ru:8033/eptop128" type="audio/mpeg">
-                </audio>
-
-                <details open>
-                    <summary class="center"><b>Песня месяца</b></summary>
-                    <small style="color: #8a8589;">По мнению пользователей</small>
-                    <audio controls>
-                        <source src="" type="audio/ogg; codecs=vorbis">
-                        <source src="" type="audio/mpeg">
-                    </audio>
-                </details>
-
-                <details open>
-                    <summary class="center"><b>Больше музыки</b></summary>
-                    <audio controls>
-                        <source src="http://radio-srv1.11one.ru/record192k.mp3" type="audio/ogg; codecs=vorbis">
-                        <source src="http://radio-srv1.11one.ru/record192k.mp3" type="audio/mpeg">
-                    </audio>
-
-                    <audio controls>
-                        <source src="http://air.radiorecord.ru:8102/rus_320" type="audio/ogg; codecs=vorbis">
-                        <source src="http://air.radiorecord.ru:8102/rus_320" type="audio/mpeg">
-                    </audio>
-
-                    <audio controls>
-                        <source src="http://air.radiorecord.ru:8102/sd90_320" type="audio/ogg; codecs=vorbis">
-                        <source src="http://air.radiorecord.ru:8102/sd90_320" type="audio/mpeg">
-                    </audio>
-
-                    <audio controls>
-                        <source src="http://sv.wargaming.fm:8051/128" type="audio/ogg; codecs=vorbis">
-                        <source src="http://sv.wargaming.fm:8051/128" type="audio/mpeg">
-                    </audio>
-
-                    <audio controls>
-                        <source src="http://air.radiorecord.ru:8102/trap_320" type="audio/ogg; codecs=vorbis">
-                        <source src="http://air.radiorecord.ru:8102/trap_320" type="audio/mpeg">
-                    </audio>
-
-                    <audio controls>
-                        <source src="http://air.radiorecord.ru:8102/yo_320" type="audio/ogg; codecs=vorbis">
-                        <source src="http://air.radiorecord.ru:8102/yo_320" type="audio/mpeg">
-                    </audio>
-                </details>
-
-                <img src="https://metrika-informer.com/informer/65547946/3_1_FFFFFFFF_EFEFEFFF_0_pageviews"
-                     style="width: 88px; height: 31px; border: 0;" alt="Яндекс.Метрика" title="Данные за сегодня"
-                     class="ym-advanced-informer" data-cid="65547946" data-lang="ru"/>
-            </div>
-            <br>
-
-            <div class="block center">
-                <p class="center"><b>Комментарии</b></p>
-                <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
-                <script type="text/javascript"> VK.init({apiId: 7543607, onlyWidgets: true});</script>
-                <div id="vk_comments">
-                    <script>type="text/javascript">VK.Widgets.Comments("vk_comments", { limit: 1, width: "50", attach: "*" }); </script>
-                </div>
-            </div>
-            <br>
         </div>
     </div>
-</main>
-<script src="/scripts/time.js"></script>
 </body>
+
 </html>
