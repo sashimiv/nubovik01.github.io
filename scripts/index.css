@@ -89,6 +89,7 @@
 /* Другое */
 a {
     display: inline-block;
+    color: rgb(0, 128, 255);
     text-decoration: none;
 }
 
@@ -161,7 +162,6 @@ body {
     border-radius: 10px;
     color: white;
     font-weight: bold;
-    box-shadow: -5px -5px 12px #FFF, 5px 5px 12px #BABECC;
     background: linear-gradient(145deg, #3595ff, #007cff);
     cursor: pointer;
     border: 0;

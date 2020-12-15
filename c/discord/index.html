@@ -4,17 +4,20 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Перенаправление... | Сайт Нубовика</title>
+  <meta name="description" content="Дискорд-сервер. Сайт Нубовика">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Дискорд-сервер • Сайт Нубовика</title>
-  <meta name="description" content="Дискорд-сервер Нубовика • Сайт Нубовика.">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="/scripts/index.css">
 </head>
 
 <meta http-equiv="refresh" content="2; URL=https://discord.gg/EJc8UC7yhZ">
 
 <p id="teleport">Перенаправление...</p>
 <script>
+
     function teleportMsg() {
-        document.getElementById('teleport').innerHTML = `<a href="https://discord.gg/EJc8UC7yhZ"><font color="blue">Нажмите сюда если вас не перенаправило.</font><br>Сайт: <font color="red"><a href="https://discord.gg/EJc8UC7yhZ">https://discord.gg/EJc8UC7yhZ</a></font></a>`
+        document.getElementById('teleport').innerHTML = `<a href="https://discord.gg/EJc8UC7yhZ">Нажмите сюда если вас не перенаправило</a>`
     }
 
     setInterval(teleportMsg, 2000);

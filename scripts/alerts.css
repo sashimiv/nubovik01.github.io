@@ -1,0 +1,38 @@
+.alertRed {
+  padding: 10px;
+  background-color: #f44336;
+  color: white;
+}
+
+.alertGreen {
+  padding: 10px;
+  background-color: #46f436;
+  color: white;
+}
+
+.alertYellow {
+  padding: 10px;
+  background-color: #f4e736;
+  color: white;
+}
+
+.alertBlue {
+  padding: 10px;
+  background-color: #3659f4;
+  color: white;
+}
+
+.closeBtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 19px;
+  cursor: pointer;
+  transition: 0.9s;
+}
+
+.closeBtn:hover {
+  color: black;
+}

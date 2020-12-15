@@ -6,10 +6,12 @@
     <script src="https://static.redguy.ru/js/loader.js"></script>
     <script async>new Loader()</script>
     <title>Сайт Нубовика</title>
-    <meta name="description" content="Новый дизайн сайта Нубовика!">
+    <meta name="description" content="Сайт Нубовика. Новый дизайн!">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
 
     <link rel="stylesheet" href="/scripts/index.css">
+    <link rel="stylesheet" href="/scripts/darkteme.css">
+    
     <script type="text/javascript" src="https://vk.com/js/api/openapi.js?168"></script>
     <script type="text/javascript">VK.Widgets.Group("vk_groups", { mode: 3, width: "300", color3: 'FD7425' }, 191048799);</script>
 
@@ -31,9 +33,8 @@
             trackHash: true
         });
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/65547946" style="position:absolute; left:-9999px;" alt=""/></div></noscript>
     <!-- /Yandex.Metrika counter -->
-
+    
     <script>
         // Отправка некоторых данных в консолъ.
         console.log(`Браузер: \n${navigator.userAgent}`);
@@ -78,12 +79,12 @@
     </script>
 </head>
 
-<body>
+<body class="darkteme">
     <div class="contentBody">
         <div class="upBar">
             <div class="bar">
-                <a href="https://nubovik01.github.io/">Старый дизайн</a> <b>|</b>
-                <font color="red">NEW!</font> <a href="covid19">COVID-19</a> <b>|</b>
+                <a href="/old/">Старый дизайн</a> <b>|</b>
+                <a href="covid19">COVID-19</a> <b>|</b>
                 <a href="https://ru.wikipedia.org/wiki/Cookie" target="_blank" onclick="alert('На сайте используются файлы Cookies, это позволяет нам делать его лучше. Продолжая пользоваться сайтом, вы соглашаетесь с использованием файлов cookie.'); alert('Cookies («Куки», «Кукисы», в переводе с английского – «Печеньки») – небольшие текстовые файлы, содержащие служебную информацию. Они создаются браузером автоматически при посещении веб-сайта и содержат информацию о нем.'); alert('Прямо сейчас вас перекинет на сайт https:\/\/ru.wikipedia.org\/wiki\/Cookie где вы сможете узнать более подробнее про файлы Cookie.')"><img src="/images/cookie.gif" width="16" height="16" alt="печенька"/></a>
             </div>
 
@@ -100,7 +101,7 @@
         <div class="content">
             <div class="additional boxhover">
                 <iframe src="https://discord.com/widget?id=457858774099689479&theme=dark" width="300" height="305" allowtransparency="true" class="boxhover" style="border: none;"></iframe>
-                <div id="vk_groups" class="boxhover"></div>
+                <!-- <div id="vk_groups" class="boxhover"></div> -->
                 <div class="footer">
                     <center><b>By NUBOVIK. Дизайн взят с <a href="https://redguy.ru/">RedGuy</a></b></center>
                 </div>
@@ -108,29 +109,67 @@
 
             <div class="main">
                 <ol>
-                    <div class="alertBlue">
-                        <span class="closeBtn" onclick="this.parentElement.style.display='none';">×</span>
-                        <img src="/images/cookie.gif" width="16" height="16" alt="печенька"/> <small>На сайте используются файлы Cookies, это позволяет нам делать его лучше. Продолжая пользоваться сайтом, вы соглашаетесь с использованием файлов cookie.</small>
-                    </div>
-
-                    <center>Новостная газета <font color="blue"><b>プッシーマンモス</b></font>, выпуск <font color="red"><b>№1</b></font> 12 декабря 2020</b></center>
-                    <center><font color="ff8a00"><b>by NUBOVIK</b></font><br></center><hr>
+                    <center><font color="ff8a00"><b>Обновления сайта</b></font><br></center><hr>
                     <img class="emoji" src="https://vk.com/emoji/e/f09f9883.png" alt="😃"> Всем привет! У сайта появился домен. <a href="https://nubovik.cf"><font color="green">https://nubovik.cf</font></a><br>
                     <img class="emoji" src="https://vk.com/emoji/e/e296b6.png" alt="▶"> Добавлена информация про файлы cookie.<br>
                     <img class="emoji" src="https://vk.com/emoji/e/e296b6.png" alt="▶"> Исправлена ошибка в /covid19
-
                     <br><br>
+
                     <!-- Yandex.Metrika informer -->
                     <a href="https://metrika.yandex.ru/stat/?id=65547946&amp;from=informer" target="_blank" rel="nofollow"><img src="https://metrika-informer.com/informer/65547946/3_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" class="ym-advanced-informer" data-cid="65547946" data-lang="ru" /></a>
-                    <!-- /Yandex.Metrika informer -->
-                    
-                    <!-- Logger -->
-                    <img src="https://iplogger.org/2Qm576">
-                    <!-- /Logger -->
+                    <!-- /Yandex.Metrika informer --><br><br>
+
+                    <div class="theme-switch-wrapper">
+                        <label class="theme-switch" for="checkbox">
+                            <input type="checkbox" id="checkbox"/>
+                            <font color="red"><b>Тёмная тема</b></font>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
                 </ol>
             </div>
         </div>
     </div>
 </body>
 
+<script>
+    // Тёмная тема
+    const toggleSwitch = document.querySelector(
+        '.theme-switch input[type="checkbox"]'
+    );
+    const currentTheme = localStorage.getItem("theme");
+    const darktemeElement = document.querySelector(".darkteme");
+    const buttonElement = document.querySelector(".btn");
+    const footerElement = document.querySelector(".footer");
+    const mainElement = document.querySelector(".main");
+
+    if (currentTheme) {
+        darktemeElement.setAttribute("data-theme", currentTheme);
+        buttonElement.setAttribute("data-theme", currentTheme);
+        footerElement.setAttribute("data-theme", currentTheme);
+        mainElement.setAttribute("data-theme", currentTheme);
+
+        if (currentTheme === "dark") {
+            toggleSwitch.checked = true;
+        }
+    }
+
+    function switchTheme(e) {
+        if (e.target.checked) {
+            darktemeElement.setAttribute("data-theme", "dark");
+            buttonElement.setAttribute("data-theme", "dark");
+            footerElement.setAttribute("data-theme", "dark");
+            mainElement.setAttribute("data-theme", "dark");
+            localStorage.setItem("theme", "dark");
+        } else {
+            darktemeElement.setAttribute("data-theme", "light");
+            buttonElement.setAttribute("data-theme", "light");
+            footerElement.setAttribute("data-theme", "light");
+            mainElement.setAttribute("data-theme", "light");
+            localStorage.setItem("theme", "light");
+        }
+    }
+
+    toggleSwitch.addEventListener("change", switchTheme, false);
+</script>
 </html>
